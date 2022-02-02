@@ -38,7 +38,7 @@
     </style>
 
     <style name="LoginInputLayout" parent="Widget.Design.TextInputLayout">
-        <item name="android:background">@color/LoginBackground</item>
+        <item name="android:background">#00282B3A</item>
         <item name="android:textColor">@color/LoginText</item>
         <item name="android:textSize">14sp</item>
         <item name="colorOnSurface">@color/LoginText</item>
