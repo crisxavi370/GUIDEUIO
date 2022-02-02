@@ -3,6 +3,6 @@
     <string name="error">Error</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Las noticias del día</string>
-    <string name="ListarProductos">Noticias del mundo</string>
+    <string name="ListarProductos">RECOMENDACIONES</string>
     <string name="CarritoProductos">Noticias favoritas</string>
 </resources>
