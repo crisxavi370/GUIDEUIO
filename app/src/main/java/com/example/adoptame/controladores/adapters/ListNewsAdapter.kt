@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.adoptame.R
 import com.example.adoptame.databinding.NewsItemsBinding
 import com.example.adoptame.entidades.News
-//import com.example.adoptame.presentacion.LoginActivity
-//import com.squareup.picasso.Picasso
+import com.example.adoptame.presentacion.LoginActivity
+import com.squareup.picasso.Picasso
 
 class ListNewsAdapter(val listNews: List<News>, val onClickItemSelected: (News) -> Unit) :
     RecyclerView.Adapter<NewsViewHolder>() {
@@ -36,7 +36,7 @@ class NewsViewHolder(itemNews: View) : RecyclerView.ViewHolder(itemNews) {
     fun render(itemNews: News, onClickItemSelected: (News) -> Unit) {
         binding.txtTitleNews.text = itemNews.title
         binding.txtDescNews.text = itemNews.desc
-        //Picasso.get().load(itemNews.img).into(binding.imageView)
+        Picasso.get().load(itemNews.img).into(binding.imageView)
 
         itemView.setOnClickListener {
             onClickItemSelected(itemNews)
