@@ -3,10 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/drawable/button.xml" value="0.169" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/drawable/ic_cancel.xml" value="0.1" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/drawable/ic_pass.xml" value="0.169" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/drawable/ic_print.xml" value="0.169" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/drawable/ic_update.xml" value="0.1345" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/drawable/ic_user.xml" value="0.169" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/layout/activity_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/layout/activity_login1.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/layout/activity_principal.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/layout/activity_registro.xml" value="0.4" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/layout/activity_update.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/layout/fragment_fav_news.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/layout/fragment_listar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/NewsApp-main/app/src/main/res/layout/news_items.xml" value="0.25416666666666665" />
