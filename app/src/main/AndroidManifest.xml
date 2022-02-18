@@ -12,13 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Adoptame">
         <activity
+            android:name=".presentacion.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentacion.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentacion.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentacion.ItemActivity"
             android:exported="false" />
         <activity
             android:name=".presentacion.PrincipalActivity"
             android:exported="false" />
         <activity
-            android:name=".presentacion.LoginActivity"
+            android:name=".presentacion.LoginActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
