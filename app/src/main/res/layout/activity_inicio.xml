@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentacion.Inicio">
+
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+        android:id="@+id/carousel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:captionTextSize="30dp"
+        app:captionMargin="10dp"
+        app:autoPlay="true"
+        app:autoPlayDelay="2000"
+        app:imageScaleType="center"
+        app:carouselBackground="@color/black"/>
+
+</LinearLayout>

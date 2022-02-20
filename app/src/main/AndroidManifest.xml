@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Adoptame">
         <activity
+            android:name=".presentacion.Inicio"
+            android:exported="false" />
+        <activity
             android:name=".presentacion.UpdateActivity"
             android:exported="false" />
         <activity
