@@ -35,7 +35,7 @@ class Contentplace : AppCompatActivity() {
 
         if(activityPrevious=="NEW"){
             changeImg.text = "Añadir imagen"
-            tituloView.text = "Nuevo Luagar"
+            tituloView.text = "Nuevo Lugar"
         }else if(activityPrevious=="UPDATE"){
             idF = intent.getStringExtra("id").toString()
             val nombre = intent.getStringExtra("nombre")

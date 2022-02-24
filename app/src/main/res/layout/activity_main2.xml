@@ -6,19 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#232228"
+    android:background="@drawable/fondo"
     tools:context=".view.MainActivity">
 
     <TextView
         android:id="@+id/txtGreetngTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
         android:text="Buenas Tardes"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:paddingTop="20dp"
-        android:paddingStart="10dp"
-        android:layout_alignParentTop="true"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/txtGreetingSecond"
@@ -34,20 +34,23 @@
         android:id="@+id/txtMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lugares"
-        android:textStyle="bold"
-        android:padding="10dp"
-        android:layout_centerInParent="true"
         android:layout_below="@+id/txtGreetingSecond"
-        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="Lugares"
+        android:textColor="#121111"
         android:textSize="25sp"
-        android:layout_gravity="center"/>
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvfood"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="382dp"
+        android:layout_height="567dp"
         android:layout_below="@+id/txtMenu"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="25dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:listitem="@layout/item_place" />
@@ -58,7 +61,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:contentDescription="New"
         android:src="@drawable/add"
         app:backgroundTint="#FFEB3B" />

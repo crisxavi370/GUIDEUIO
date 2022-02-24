@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.Contentplace"
-    android:background="#232228">
+    android:background="@drawable/fondo">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -19,7 +19,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraint"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo"
             android:padding="20dp">
 
             <TextView
@@ -27,9 +28,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Editar Contenido"
-                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/black"
+                android:textSize="22sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:textSize="22sp"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
 
             <Button
@@ -57,23 +59,24 @@
                     android:id="@+id/lnLa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="2"
                     android:layout_marginBottom="20dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:weightSum="2">
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imgFood"
                         android:layout_width="130dp"
                         android:layout_height="130dp"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FFC107"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginTop="8dp"
+                        app:civ_border_color="#FFC107"
+                        app:civ_border_width="2dp" />
 
                     <TextView
                         android:id="@+id/txtCambiarI"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:layout_gravity="center_horizontal"
                         android:text="Cambiar Imagen" />
 
@@ -81,10 +84,11 @@
                         android:id="@+id/txtVNombre"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nombre: "
-                        android:textSize="15sp"
+                        android:layout_gravity="left"
                         android:layout_marginTop="10dp"
-                        android:layout_gravity="left"/>
+                        android:text="Nombre: "
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/edNombre"
@@ -94,10 +98,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Descripción: "
-                        android:textSize="15sp"
+                        android:layout_gravity="left"
                         android:layout_marginTop="20dp"
-                        android:layout_gravity="left"/>
+                        android:text="Descripción: "
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/edDesc"
@@ -107,35 +112,36 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
                         android:layout_gravity="left"
-                        android:textSize="15sp"
-                        android:text="Ubicacion: "/>
+                        android:layout_marginTop="20dp"
+                        android:text="Ubicacion: "
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/edPrecio"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"/>
+                        android:inputType="numberDecimal" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
                         android:layout_gravity="left"
-                        android:textSize="15sp"
-                        android:text="Cant.Estrellas:"/>
+                        android:layout_marginTop="20dp"
+                        android:text="Cant.Estrellas:"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
 
 
                     <EditText
                         android:id="@+id/edEst"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"/>
+                        android:inputType="numberDecimal" />
                 </LinearLayout>
 
             </ScrollView>
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

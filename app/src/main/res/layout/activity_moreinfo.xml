@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#232228"
+    android:background="@drawable/fondo"
     tools:context=".view.Moreinfo">
 
     <androidx.cardview.widget.CardView
@@ -16,6 +16,7 @@
         android:layout_margin="20dp">
 
         <LinearLayout
+            android:background="@drawable/fondo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -43,7 +44,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="NOMBRE"
-                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textSize="30sp"
                 android:layout_marginTop="20dp"
                 android:gravity="center_horizontal"
                 android:layout_gravity="center_horizontal"/>
@@ -52,6 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ubicación"
+                android:textColor="@color/black"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"/>
 
@@ -99,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:text="Descripción"
                 android:textStyle="bold"
-                android:textColor="#ffff"
+                android:textColor="#070707"
                 android:paddingStart="20dp"
                 android:paddingBottom="5dp"
                 android:textSize="20dp"/>
