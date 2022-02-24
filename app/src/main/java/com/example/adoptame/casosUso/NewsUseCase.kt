@@ -11,7 +11,7 @@ class NewsUseCase {
             "El Panecillo es una elevación natural de 3.000 metros sobre el nivel del mar, fue bautizada con este nombre por su parecido con un pequeño pan; está enclavada en el corazón mismo de la ciudad de Quito. Es uno de los sitios más visitados de la ciudad. Por su ubicación se ha convertido en el más importante mirador natural de la ciudad, desde el que se puede apreciar la disposición urbana de la capital, desde su centro histórico y hacia los extremos norte y sur.\n" +
                     "\n" +
                     "El lugar recibió su nombre de los conquistadores españoles, pues antes era llamado por los aborígenes como “Shungoloma” que en quichua significa “loma del corazón”. En la época pre incaica, en este sitio existió un templo de adoración al sol, llamado “Yavirac”, el cual fue destruido por Rumiñahui mientras resistía con sus tropas al avance español.",
-            "https://imagenes.laestrella.com.pa/files/image_990_491/uploads/2019/09/16/5d7f49e0deb2c.jpeg"
+            "https://imagenes.laestrella.com.pa/files/image_990_491/uploads/2019/09/16/5d7f49e0deb2c.jpg"
         ),
         News(
             "Fulgencio Araujo, y, Quito 170527",
