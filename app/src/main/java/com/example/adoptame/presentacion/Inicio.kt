@@ -1,11 +1,14 @@
 package com.example.adoptame.presentacion
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 
 import android.widget.Toast
 
 import com.example.adoptame.R
+import com.example.adoptame.view.MainActivity
 import org.imaginativeworld.whynotimagecarousel.ImageCarousel
 
 import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
@@ -18,6 +21,8 @@ class Inicio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
+        val btnrecome: Button = findViewById(R.id.btnrecome)
+        val btnmore: Button = findViewById(R.id.btnmore)
         val carousel: ImageCarousel = findViewById(R.id.carousel)
 
         list.add(CarouselItem("https://images.squarespace-cdn.com/content/v1/5cae4c3f16b6407bf89ebeb4/1586547220129-YIDLO744DWCSZHUXK6OZ/IMG_1209.JPG",
@@ -45,5 +50,15 @@ class Inicio : AppCompatActivity() {
 
     }
         carousel.addData(list)
+        btnrecome.setOnClickListener{
+            var intent1 = Intent(this@Inicio, PrincipalActivity::class.java)
+            startActivity(intent1)
+
+        }
+        btnmore.setOnClickListener{
+            var intent2 = Intent(this@Inicio, MainActivity::class.java)
+            startActivity(intent2)
+
+        }
     }
 }

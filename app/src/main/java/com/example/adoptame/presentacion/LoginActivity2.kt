@@ -31,7 +31,9 @@ class LoginActivity2 : AppCompatActivity() {
                 if (logindt==true){
                     Toast.makeText(this, "BIENVENIDO",
                         Toast.LENGTH_SHORT).show()
-                    var intent = Intent(this@LoginActivity2, PrincipalActivity::class.java)
+                   // var intent = Intent(this@LoginActivity2, PrincipalActivity::class.java)
+                    var intent = Intent(this@LoginActivity2, Inicio::class.java)
+
                     startActivity(intent)
                 }
                 else{

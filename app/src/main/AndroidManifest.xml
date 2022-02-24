@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Adoptame">
         <activity
-            android:name=".presentacion.LoginActivity2"
+            android:name=".presentacion.Inicio"
             android:exported="false" />
         <activity
             android:name=".presentacion.UpdateActivity"
@@ -30,7 +30,17 @@
             android:name=".presentacion.PrincipalActivity"
             android:exported="false" />
         <activity
-            android:name=".presentacion.Inicio"
+            android:name=".view.Moreinfo"
+            android:exported="false" />
+        <activity
+            android:name=".view.Contentplace"
+            android:exported="false" />
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentacion.LoginActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
