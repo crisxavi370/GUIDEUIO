@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+<!--    <color name="colorPrimary">#ffe400</color>-->
+<!--    <color name="colorPrimaryDark">#ffa600</color>-->
+<!--    <color name="colorAccent">#272727</color>-->
+    <color name="transparent">#00ffffff</color>
 
-    <!-- Login -->
-    <color name="LoginBackground">#282b3a</color>
-    <color name="LoginButton">#fc3c3e</color>
-    <color name="LoginText">#e3e6ed</color>
-    <color name="c1">#d1d1d1</color>
-    <color name="LoginHighlight">#c5c5c5</color>
-    <color name="LoginForgot">#61606e</color>
+    <color name="colorPrimary">#947AE8</color>
+    <color name="colorPrimaryDark">#3B90DB</color>
+    <color name="colorAccent">#272727</color>
 
-    shrine_blue_900
-    <color name="shrine_blue_900">#2B1FBC</color>
-    <color name="shrine_blue_100">#564EBD</color>
+    <color name="lightWhite">#f2f5f8</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="black_light">#454343</color>
+
+    <!--  Body and background Colors  -->
+    <color name="home_background">#f2f5f8</color>
+    <color name="banner_background">#F1E9CE</color>
+    <color name="banner_background_light">#56F1E9CE</color>
+
+    <!--  Card Colors  -->
+    <color name="card1">#d4cbe5</color>
+    <color name="card2">#7adccf</color>
+    <color name="card3">#f7c59f</color>
+    <color name="card4">#b8d7f5</color>
+
+    <color name="red_light">#D15B5F</color>
 
 </resources>

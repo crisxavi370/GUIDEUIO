@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.adoptame">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,48 +11,48 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Adoptame">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ProfileActivity"
+            android:exported="false"/>
+        <activity android:name=".script.ScriptDataActivity"
+            android:exported="false"/>
+        <activity android:name="com.example.adoptame.webview.ECommerceActivity"
+            android:exported="false"/>
+        <activity android:name=".PlaceDetailActivity"
+            android:exported="false"/>
         <activity
-            android:name=".presentacion.Inicio"
-            android:exported="false" />
+            android:name=".AllPlacesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".LoginSignup.SignUpActivity"
+            android:exported="false"/>
+        <activity android:name=".LoginSignup.LoginActivity"
+            android:exported="false"/>
         <activity
-            android:name=".presentacion.UpdateActivity"
-            android:exported="false" />
+            android:name=".LoginSignup.StartUpScreenActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".presentacion.LoginActivity"
-            android:exported="false" />
+            android:name=".AllCateogriesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".UserDashboardActivity"
+            android:exported="false"/>
         <activity
-            android:name=".presentacion.MainActivity"
-            android:exported="false" />
+            android:name=".OnBoardingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".presentacion.ItemActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentacion.PrincipalActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.Moreinfo"
-            android:exported="false" />
-        <activity
-            android:name=".view.Contentplace"
-            android:exported="false" />
-        <activity
-            android:name=".view.MainActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".presentacion.LoginActivity2"
-            android:exported="true">
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
