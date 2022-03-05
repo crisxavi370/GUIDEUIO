@@ -23,15 +23,14 @@
             android:textSize="20sp"
             android:textColor="@color/colorAccent"
             android:fontFamily="@font/brandon_grotesque_bold_italic"/>
-        
+
         <ImageView
             android:id="@+id/categories_image"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:src="@drawable/restaurant_image"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"/>
-        
+            android:layout_width="220dp"
+            android:layout_height="120dp"
+
+            android:src="@drawable/restaurant_image" />
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

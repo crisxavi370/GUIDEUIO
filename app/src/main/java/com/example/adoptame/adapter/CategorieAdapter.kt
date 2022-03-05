@@ -35,17 +35,17 @@ class CategorieAdapter: RecyclerView.Adapter<CategorieAdapter.MyViewHolder>() {
 
         if(image == "restaurant_image"){
             holder.itemView.categories_image.setImageResource(R.drawable.restaurant_image)
-        } else if(image == "transport_image"){
+        } else if(image == "categories_park_icon"){
+            holder.itemView.categories_image.setImageResource(R.drawable.categories_park_icon)
+        } else if(image == "hotel_image"){
             holder.itemView.categories_image.setImageResource(R.drawable.hotel_image)
-        } else if(image == "shopping_image"){
-            holder.itemView.categories_image.setImageResource(R.drawable.shopping_image)
         } else if(image == "famosos_icono"){
             holder.itemView.categories_image.setImageResource(R.drawable.famosos_icono)
-        } else if(image == "vlog"){
-            holder.itemView.categories_image.setImageResource(R.drawable.vlog)
+        } else if(image == "recomendaciones_icono"){
+            holder.itemView.categories_image.setImageResource(R.drawable.recomendaciones_icono)
         }
         else {
-            val urlImage = "https://i.ibb.co/vL9NP6X/transport-image.png"
+            val urlImage = "https://img.lovepik.com/element/40134/0075.png_860.png"
             //Glide.with(context).load(urlImage).centerCrop().into(holder.itemView.categories_image)
             Glide.with(holder.itemView.context).load(urlImage).into(holder.itemView.categories_image)
         }

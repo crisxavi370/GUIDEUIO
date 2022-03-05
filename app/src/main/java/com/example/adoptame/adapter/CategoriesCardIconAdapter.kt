@@ -30,20 +30,20 @@ class CategoriesCardIconAdapter: RecyclerView.Adapter<CategoriesCardIconAdapter.
         holder.itemView.card_category_title.text = currentItem.name.toString()
         val image = currentItem.image.toString()
         if(image == "restaurant_image"){
-            holder.itemView.card_categories_image.setImageResource(R.drawable.restaurant_icon)
+            holder.itemView.card_categories_image.setImageResource(R.drawable.icon_1)
             holder.itemView.card_cateory_icon.setBackgroundResource(R.drawable.card_1)
-        } else if(image == "vlog"){
-            holder.itemView.card_categories_image.setImageResource(R.drawable.bank_icon)
-            holder.itemView.card_cateory_icon.setBackgroundResource(R.drawable.card_2)
+        } else if(image == "categories_park_icon"){
+            holder.itemView.card_categories_image.setImageResource(R.drawable.icon_6)
+            holder.itemView.card_cateory_icon.setBackgroundResource(R.drawable.card_1)
+        } else if(image == "hotel_image"){
+            holder.itemView.card_categories_image.setImageResource(R.drawable.icon_3)
+            holder.itemView.card_cateory_icon.setBackgroundResource(R.drawable.card_1)
         } else if(image == "famosos_icono"){
-            holder.itemView.card_categories_image.setImageResource(R.drawable.school_icon)
-            holder.itemView.card_cateory_icon.setBackgroundResource(R.drawable.card_3)
-        } else if(image == "shopping_image"){
-            holder.itemView.card_categories_image.setImageResource(R.drawable.shop_icon)
-            holder.itemView.card_cateory_icon.setBackgroundResource(R.drawable.card_4)
-        } else if(image == "transport_image"){
-            holder.itemView.card_categories_image.setImageResource(R.drawable.car_icon)
-            holder.itemView.card_cateory_icon.setBackgroundResource(R.drawable.gradient_color)
+            holder.itemView.card_categories_image.setImageResource(R.drawable.icon_4)
+            holder.itemView.card_cateory_icon.setBackgroundResource(R.drawable.card_1)
+        } else if(image == "recomendaciones_icono"){
+            holder.itemView.card_categories_image.setImageResource(R.drawable.icon_5)
+            holder.itemView.card_cateory_icon.setBackgroundResource(R.drawable.card_1)
         }
 
         holder.itemView.card_cateory_icon.setOnClickListener {

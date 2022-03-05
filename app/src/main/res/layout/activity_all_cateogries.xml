@@ -38,8 +38,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Categories"
+            android:text="CATEGORIAS"
             android:textSize="30sp"
+            android:textColor="@color/black"
             android:fontFamily="@font/brandon_grotesque_black"
             android:textAllCaps="true"
             android:padding="10dp"/>
@@ -62,31 +63,34 @@
                 android:background="@drawable/card_2">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginRight="5dp"
                     android:fontFamily="@font/brandon_grotesque_black"
                     android:padding="25dp"
                     android:text="@string/car_rent"
                     android:textColor="@color/black"
-                    android:textSize="30sp" />
+                    android:textSize="25dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginBottom="0dp"
                     android:background="#00000000"
                     android:padding="20dp"
                     android:text="@string/expand_all"
                     android:textColor="@color/black" />
 
-            </RelativeLayout>
+                <ImageView
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/categories_park_icon" />
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="-40dp"
-                android:src="@drawable/categories_park_icon" />
+            </RelativeLayout>
 
         </RelativeLayout>
 
@@ -104,26 +108,28 @@
                 android:background="@drawable/card_2">
 
                 <ImageView
-                    android:layout_width="120dp"
+                    android:layout_width="147dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/categories_restaurant_icon"
-                    android:layout_marginLeft="20dp"/>
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/categories_restaurant_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:fontFamily="@font/brandon_grotesque_regular_italic"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/brandon_grotesque_black"
                     android:padding="25dp"
                     android:text="@string/restaurants"
                     android:textColor="@color/black"
-                    android:textSize="30sp" />
+                    android:textSize="25dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="143dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
                     android:background="#00000000"
                     android:padding="20dp"
                     android:text="@string/expand_all"
@@ -148,32 +154,36 @@
                 android:background="@drawable/card_2">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/brandon_grotesque_regular_italic"
+                    android:layout_width="261dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="60dp"
+                    android:fontFamily="@font/brandon_grotesque_black"
                     android:padding="25dp"
                     android:text="@string/education"
                     android:textColor="@color/black"
-                    android:textSize="30sp" />
+                    android:textSize="25dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="153dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginBottom="0dp"
                     android:background="#00000000"
                     android:padding="20dp"
                     android:text="@string/expand_all"
                     android:textColor="@color/black" />
 
+                <ImageView
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/famosos_icono" />
+
 
             </RelativeLayout>
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="-15dp"
-                android:src="@drawable/famosos_icono" />
 
         </RelativeLayout>
 
@@ -189,26 +199,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:background="@drawable/card_2">
+
                 <ImageView
-                    android:layout_width="120dp"
+                    android:layout_width="153dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="0dp"
                     android:src="@drawable/recomendaciones_icono" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:fontFamily="@font/brandon_grotesque_regular_italic"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/brandon_grotesque_black"
                     android:padding="25dp"
                     android:text="@string/shops"
                     android:textColor="@color/black"
-                    android:textSize="30sp" />
+                    android:textSize="25dp" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="165dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="-1dp"
                     android:background="#00000000"
                     android:padding="20dp"
                     android:text="@string/expand_all"
@@ -233,31 +248,34 @@
                 android:background="@drawable/card_2">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/brandon_grotesque_regular_italic"
+                    android:layout_width="match_parent"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/brandon_grotesque_black"
                     android:padding="25dp"
                     android:text="@string/hotels"
                     android:textColor="@color/black"
                     android:textSize="30sp" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="175dp"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
                     android:background="#00000000"
                     android:padding="20dp"
                     android:text="@string/expand_all"
                     android:textColor="@color/black" />
 
-            </RelativeLayout>
+                <ImageView
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/hotel_image" />
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="-40dp"
-                android:src="@drawable/hotel_image" />
+            </RelativeLayout>
 
         </RelativeLayout>
 
