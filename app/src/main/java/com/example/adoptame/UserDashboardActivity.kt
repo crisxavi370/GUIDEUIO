@@ -174,18 +174,7 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
             R.id.nav_shop ->{
                 intentActionGo(5)
             }
-            R.id.nav_onlineshopping -> {
-                val urlEcommerce = "http://lukpheakdey.com/"
-                intentLoadWeb(urlEcommerce)
-            }
-            R.id.nav_taxi -> {
-                val urlTaxi = "https://www.uber.com/us/en/ride/"
-                intentLoadWeb(urlTaxi)
-            }
-            R.id.nav_deliver -> {
-                val urlDeliver = "https://www.doordash.com/en-US"
-                intentLoadWeb(urlDeliver)
-            }
+
             R.id.nav_script -> {
                 var i = Intent(applicationContext, ScriptDataActivity::class.java)
                 startActivity(i)

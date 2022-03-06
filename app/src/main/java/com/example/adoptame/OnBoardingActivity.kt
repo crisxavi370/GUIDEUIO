@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
+import com.example.adoptame.LoginSignup.LoginActivity
 import com.example.adoptame.adapter.OnBoardingViewPagerAdapter
 import com.example.adoptame.model.OnBoardingData
 import com.google.android.material.tabs.TabLayout
@@ -53,7 +54,8 @@ class OnBoardingActivity : AppCompatActivity() {
             }
             if(position == onBoardingData.size){
                 savePrefData()
-                val i = Intent(applicationContext, UserDashboardActivity::class.java)
+               // val i = Intent(applicationContext, UserDashboardActivity::class.java)
+                val i = Intent(applicationContext, LoginActivity::class.java)
                 startActivity(i)
             }
         }
