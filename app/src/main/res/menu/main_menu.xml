@@ -16,7 +16,7 @@
             android:icon="@drawable/menu_place_icon"/>
     </group>
 
-    <item android:title="Profile">
+    <item android:title="Perfil">
         <menu>
 
             <group android:checkableBehavior="single">
@@ -38,7 +38,7 @@
         </menu>
     </item>
 
-    <item android:title="Categories">
+    <item android:title="Categorias">
         <menu>
 
             <group android:checkableBehavior="single">
@@ -67,7 +67,7 @@
         </menu>
     </item>
 
-    <item android:title="Script">
+    <item android:title="Mostrar">
         <menu>
 
             <group android:checkableBehavior="none">

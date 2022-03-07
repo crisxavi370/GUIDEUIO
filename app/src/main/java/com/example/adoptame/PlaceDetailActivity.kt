@@ -26,7 +26,7 @@ class PlaceDetailActivity : AppCompatActivity() {
         val day_close = intent.getStringExtra("DAY_CLOSE")
         val map_url = intent.getStringExtra("MAP_URL")
         val image_url = intent.getStringExtra("IMAGE_URL")
-        val open_day = "Open : ${open_time} | Close: ${close_time} | Day Open: ${day_open} | Day Close: ${day_close}"
+        val open_day = "Abre : ${open_time} | Cierra: ${close_time} | Días Abiertos: ${day_open} | Días Cerrados: ${day_close}"
         val website = intent.getStringExtra("WEBSITE")
         val review = intent.getStringExtra("REVIEW")
 

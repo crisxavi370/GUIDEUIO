@@ -35,7 +35,9 @@
             android:id="@+id/btn_create_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/red_light"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="#689bd3"
             android:text="Mostrar Contenido"/>
 
 

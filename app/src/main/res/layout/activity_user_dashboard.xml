@@ -230,22 +230,17 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:fontFamily="@font/brandon_grotesque_black"
-                            android:text="@string/categories"
+                            android:text=" "
                             android:textAllCaps="true"
                             android:textColor="@color/colorAccent"
                             android:textSize="20sp" />
 
-<!--                        <TextView-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_alignParentRight="true"-->
-<!--                            android:layout_centerVertical="true"-->
-<!--                            android:text="@string/view_all" />-->
 
 
                     </RelativeLayout>
 
                     <androidx.recyclerview.widget.RecyclerView
+                        android:visibility="invisible"
                         android:id="@+id/categories_recycler"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
