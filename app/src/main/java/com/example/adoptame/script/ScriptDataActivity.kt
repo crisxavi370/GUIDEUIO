@@ -10,6 +10,7 @@ import com.example.adoptame.model.Place
 import com.example.adoptame.viewmodel.CategoriesViewModel
 import com.example.adoptame.viewmodel.PlaceViewModel
 import kotlinx.android.synthetic.main.activity_script_data.*
+import kotlinx.android.synthetic.main.activity_user_dashboard.*
 
 class ScriptDataActivity : AppCompatActivity() {
 
@@ -26,28 +27,12 @@ class ScriptDataActivity : AppCompatActivity() {
 
         btn_create_category.setOnClickListener {
             runAddCategories()
-        }
-
-        btn_create_category1.setOnClickListener {
             runAddCategories1()
-        }
-
-        btn_create_category2.setOnClickListener {
             runAddCategories2()
-        }
-
-        btn_create_category3.setOnClickListener {
             runAddCategories3()
-        }
-
-        btn_create_category4.setOnClickListener {
             runAddCategories4()
-        }
-
-        btn_create_place.setOnClickListener {
             runAddPlaces()
         }
-
         back_pressed.setOnClickListener {
             super.onBackPressed()
         }

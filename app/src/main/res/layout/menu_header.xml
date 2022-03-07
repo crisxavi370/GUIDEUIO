@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background="@color/white"
+    android:background="#689bd3"
     android:paddingLeft="15dp">
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_above="@id/app_name"
-        android:src="@drawable/menu_icono" />
+        android:src="@drawable/icon_7" />
 
 
     <ImageView
