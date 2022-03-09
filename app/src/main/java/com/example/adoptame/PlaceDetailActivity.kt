@@ -44,17 +44,20 @@ class PlaceDetailActivity : AppCompatActivity() {
         back_pressed.setOnClickListener {
             super.onBackPressed()
         }
-
+        //Uso de la URi
+        //Para hacer uso de las llamadas telefonicas
         detail_phone.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL);
             intent.data = Uri.parse("tel:$phone")
             startActivity(intent)
         }
+        //Para poder visitar el sitio web
 
         detail_website.setOnClickListener {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(website.toString()))
             startActivity(browserIntent)
         }
+        //Para mostrar la ubicacion en el mapa
 
         detail_map.setOnClickListener {
             val mapUri = Uri.parse("geo:0,0?q=" + Uri.encode(address))
