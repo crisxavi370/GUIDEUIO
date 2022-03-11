@@ -57,7 +57,7 @@ class PlaceDetailActivity : AppCompatActivity() {
             val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(website.toString()))
             startActivity(browserIntent)
         }
-        //Para mostrar la ubicacion en el mapa
+        //Para mostrar la ubicacion en google maps
 
         detail_map.setOnClickListener {
             val mapUri = Uri.parse("geo:0,0?q=" + Uri.encode(address))
