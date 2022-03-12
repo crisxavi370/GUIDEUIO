@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AllCateogriesActivity"
-    android:background="@drawable/fondo">
+    android:background="@drawable/fondo_principal">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:padding="15dp"
-                android:src="@drawable/general_back_icon" />
+                android:src="@drawable/regresar_icono_black" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:padding="15dp"
-                android:src="@drawable/general_search_icon" />
+                android:src="@drawable/busqueda_icono" />
 
         </RelativeLayout>
 
@@ -69,7 +69,7 @@
                     android:layout_marginRight="5dp"
                     android:fontFamily="@font/brandon_grotesque_black"
                     android:padding="25dp"
-                    android:text="@string/car_rent"
+                    android:text="@string/parques"
                     android:textColor="@color/black"
                     android:textSize="25dp" />
 
@@ -81,14 +81,14 @@
                     android:layout_marginBottom="0dp"
                     android:background="#00000000"
                     android:padding="20dp"
-                    android:text="@string/expand_all"
+                    android:text="@string/mostrar_mas"
                     android:textColor="@color/black" />
 
                 <ImageView
                     android:layout_width="147dp"
                     android:layout_height="match_parent"
                     android:layout_marginTop="0dp"
-                    android:src="@drawable/categories_park_icon" />
+                    android:src="@drawable/categoria_parque_icono" />
 
             </RelativeLayout>
 
@@ -111,7 +111,7 @@
                     android:layout_width="147dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="0dp"
-                    android:src="@drawable/categories_restaurant_icon" />
+                    android:src="@drawable/categoria_restaurante_icono" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -120,7 +120,7 @@
                     android:layout_marginRight="5dp"
                     android:fontFamily="@font/brandon_grotesque_black"
                     android:padding="25dp"
-                    android:text="@string/restaurants"
+                    android:text="@string/restaurantes"
                     android:textColor="@color/black"
                     android:textSize="25dp" />
 
@@ -132,7 +132,7 @@
                     android:layout_marginBottom="0dp"
                     android:background="#00000000"
                     android:padding="20dp"
-                    android:text="@string/expand_all"
+                    android:text="@string/mostrar_mas"
                     android:textColor="@color/black" />
 
             </RelativeLayout>
@@ -161,7 +161,7 @@
                     android:layout_marginBottom="60dp"
                     android:fontFamily="@font/brandon_grotesque_black"
                     android:padding="25dp"
-                    android:text="@string/education"
+                    android:text="@string/lugares_famosos"
                     android:textColor="@color/black"
                     android:textSize="25dp" />
 
@@ -173,14 +173,14 @@
                     android:layout_marginBottom="0dp"
                     android:background="#00000000"
                     android:padding="20dp"
-                    android:text="@string/expand_all"
+                    android:text="@string/mostrar_mas"
                     android:textColor="@color/black" />
 
                 <ImageView
                     android:layout_width="147dp"
                     android:layout_height="match_parent"
                     android:layout_marginTop="0dp"
-                    android:src="@drawable/famosos_icono" />
+                    android:src="@drawable/categoria_famosos_icono" />
 
 
             </RelativeLayout>
@@ -204,7 +204,7 @@
                     android:layout_width="153dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="0dp"
-                    android:src="@drawable/recomendaciones_icono" />
+                    android:src="@drawable/categoria_recomendaciones_icono" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -213,7 +213,7 @@
                     android:layout_marginRight="5dp"
                     android:fontFamily="@font/brandon_grotesque_black"
                     android:padding="25dp"
-                    android:text="@string/shops"
+                    android:text="@string/recomendaciones"
                     android:textColor="@color/black"
                     android:textSize="25dp" />
 
@@ -226,7 +226,7 @@
                     android:layout_marginBottom="-1dp"
                     android:background="#00000000"
                     android:padding="20dp"
-                    android:text="@string/expand_all"
+                    android:text="@string/mostrar_mas"
                     android:textColor="@color/black" />
 
             </RelativeLayout>
@@ -254,7 +254,7 @@
                     android:layout_marginRight="5dp"
                     android:fontFamily="@font/brandon_grotesque_black"
                     android:padding="25dp"
-                    android:text="@string/hotels"
+                    android:text="@string/hoteles"
                     android:textColor="@color/black"
                     android:textSize="30sp" />
 
@@ -266,14 +266,14 @@
                     android:layout_marginBottom="0dp"
                     android:background="#00000000"
                     android:padding="20dp"
-                    android:text="@string/expand_all"
+                    android:text="@string/mostrar_mas"
                     android:textColor="@color/black" />
 
                 <ImageView
                     android:layout_width="147dp"
                     android:layout_height="match_parent"
                     android:layout_marginTop="0dp"
-                    android:src="@drawable/hotel_image" />
+                    android:src="@drawable/categoria_hotel_icono" />
 
             </RelativeLayout>
 

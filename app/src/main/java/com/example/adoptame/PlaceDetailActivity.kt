@@ -3,17 +3,15 @@ package com.example.adoptame
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.activity_all_cateogries.*
-import kotlinx.android.synthetic.main.activity_place_detail.*
-import kotlinx.android.synthetic.main.activity_place_detail.back_pressed
+import kotlinx.android.synthetic.main.activity_lugar_detalle.*
+
 
 class PlaceDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_place_detail)
+        setContentView(R.layout.activity_lugar_detalle)
 
         val name = intent.getStringExtra("PLACE_NAME")
         val star = intent.getStringExtra("PLACE_STAR")

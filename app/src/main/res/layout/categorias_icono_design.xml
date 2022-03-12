@@ -17,7 +17,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/restaurant_icon" />
+            android:src="@drawable/restaurante_new_icono" />
 
     </RelativeLayout>
 
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="@string/restaurants"
+        android:text="@string/restaurantes"
         android:textAlignment="center" />
 
 </LinearLayout>

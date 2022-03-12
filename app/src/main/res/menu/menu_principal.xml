@@ -4,16 +4,16 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:title="@string/home"
-            android:icon="@drawable/menu_dashboard_icon"/>
+            android:title="@string/principal"
+            android:icon="@drawable/menu_dashboard_icono"/>
         <item
             android:id="@+id/nav_all_categories"
-            android:title="@string/all_categories"
-            android:icon="@drawable/menu_categories_icon"/>
+            android:title="@string/todas_categorias"
+            android:icon="@drawable/menu_categorias_icono"/>
         <item
             android:id="@+id/nav_all_places"
-            android:title="@string/all_places"
-            android:icon="@drawable/menu_place_icon"/>
+            android:title="@string/todos_lugares"
+            android:icon="@drawable/menu_lugar_icon"/>
     </group>
 
     <item android:title="Perfil">
@@ -23,16 +23,16 @@
                 <item
                     android:id="@+id/nav_login"
                     android:title="@string/login"
-                    android:icon="@drawable/menu_login_icon"/>
+                    android:icon="@drawable/menu_login_icono"/>
                 <item
                     android:id="@+id/nav_profile"
-                    android:title="@string/profile"
-                    android:icon="@drawable/menu_profile_icon"/>
+                    android:title="@string/perfil"
+                    android:icon="@drawable/menu_perfil_icono"/>
                 <item
                     android:id="@+id/nav_logout"
                     android:title="@string/logout"
                     android:visible="true"
-                    android:icon="@drawable/menu_logout_icon"/>
+                    android:icon="@drawable/menu_logout_icono"/>
             </group>
 
         </menu>
@@ -44,24 +44,24 @@
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_restaurants"
-                    android:title="@string/restaurants"
-                    android:icon="@drawable/icon_1"/>
+                    android:title="@string/restaurantes"
+                    android:icon="@drawable/restaurante_icono"/>
                 <item
                     android:id="@+id/nav_car_rent"
-                    android:title="@string/car_rent"
-                    android:icon="@drawable/icon_6"/>
+                    android:title="@string/parques"
+                    android:icon="@drawable/parque_icono"/>
                 <item
                     android:id="@+id/nav_hotel"
-                    android:title="@string/hotels"
-                    android:icon="@drawable/icon_3"/>
+                    android:title="@string/hoteles"
+                    android:icon="@drawable/hotel_icono"/>
                 <item
                     android:id="@+id/nav_education"
-                    android:title="@string/education"
-                    android:icon="@drawable/icon_4"/>
+                    android:title="@string/lugares_famosos"
+                    android:icon="@drawable/icono_menu"/>
                 <item
                     android:id="@+id/nav_shop"
-                    android:title="@string/shops"
-                    android:icon="@drawable/icon_5"/>
+                    android:title="@string/recomendaciones"
+                    android:icon="@drawable/recomendados_icono"/>
             </group>
 
         </menu>

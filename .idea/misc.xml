@@ -34,6 +34,7 @@
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1815" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/add_missing_place_icon.xml" value="0.1065" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/bank_icon.xml" value="0.1065" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/busqueda_icono.xml" value="0.2055" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/car_icon.xml" value="0.147" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/card_1.xml" value="0.1065" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/card_2.xml" value="0.1865" />
@@ -71,6 +72,7 @@
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/icon_shopping.xml" value="0.1065" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/icon_taxi.xml" value="0.1065" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/icon_web.xml" value="0.1065" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/icono_menu.xml" value="0.2055" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/indicator_selector.xml" value="0.1065" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/login_icon.xml" value="0.192" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/menu_add_missing_place_icon.xml" value="0.1065" />
@@ -87,6 +89,7 @@
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/menu_share_icon.xml" value="0.1065" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/not_found.xml" value="0.1065" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/restaurant_icon.xml" value="0.147" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/restaurante_icono.xml" value="0.2055" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/sample.xml" value="0.1065" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/school_icon.xml" value="0.1065" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/drawable/selected.xml" value="0.1065" />
@@ -106,6 +109,7 @@
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/layout/activity_user_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/layout/all_places_card_design.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/layout/card_categorie_and_icon.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/layout/categorias_tarjetas_design.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/layout/categories_card_design.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/layout/featured_card_design.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrador/Downloads/Clases-Dispositivos moviles/Proyecto 3.0/NewsApp-main/app/src/main/res/layout/menu_header.xml" value="0.25416666666666665" />

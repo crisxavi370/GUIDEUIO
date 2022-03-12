@@ -18,7 +18,7 @@
             android:id="@+id/featured_image"
             android:layout_width="match_parent"
             android:layout_height="140dp"
-            android:src="@drawable/famosos_icono"
+            android:src="@drawable/categoria_famosos_icono"
             android:scaleType="centerCrop"/>
 
         <TextView

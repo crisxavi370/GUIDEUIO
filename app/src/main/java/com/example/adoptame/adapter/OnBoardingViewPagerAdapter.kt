@@ -25,7 +25,7 @@ class OnBoardingViewPagerAdapter(private var context:Context, private var onBoar
     }
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        val view = LayoutInflater.from(context).inflate(R.layout.onboarding_screen_layout, null)
+        val view = LayoutInflater.from(context).inflate(R.layout.onboarding_design, null)
         val imageView: ImageView
         val title: TextView
         val desc: TextView

@@ -11,8 +11,7 @@ import com.bumptech.glide.Glide
 import com.example.adoptame.PlaceDetailActivity
 import com.example.adoptame.R
 import com.example.adoptame.model.Place
-import kotlinx.android.synthetic.main.all_places_card_design.view.*
-import kotlinx.android.synthetic.main.featured_card_design.view.*
+import kotlinx.android.synthetic.main.lugar_principal_design_design.view.*
 
 class FeatureAdapter: RecyclerView.Adapter<FeatureAdapter.MyViewHolder>() {
 
@@ -25,7 +24,7 @@ class FeatureAdapter: RecyclerView.Adapter<FeatureAdapter.MyViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.featured_card_design, parent, false))
+        return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.lugar_principal_design_design, parent, false))
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {

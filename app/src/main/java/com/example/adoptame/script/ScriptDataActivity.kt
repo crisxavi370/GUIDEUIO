@@ -9,7 +9,8 @@ import com.example.adoptame.model.Categories
 import com.example.adoptame.model.Place
 import com.example.adoptame.viewmodel.CategoriesViewModel
 import com.example.adoptame.viewmodel.PlaceViewModel
-import kotlinx.android.synthetic.main.activity_script_data.*
+import kotlinx.android.synthetic.main.activity_mostrar_datos.*
+
 
 
 class ScriptDataActivity : AppCompatActivity() {
@@ -20,7 +21,7 @@ class ScriptDataActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_script_data)
+        setContentView(R.layout.activity_mostrar_datos)
 
         mCategoriesViewModel = ViewModelProvider(this).get(CategoriesViewModel::class.java)
         mPlaceViewModel = ViewModelProvider(this).get(PlaceViewModel::class.java)

@@ -10,7 +10,7 @@ import com.example.adoptame.R
 import com.example.adoptame.UserDashboardActivity
 import com.example.adoptame.model.User
 import com.example.adoptame.viewmodel.UserViewModel
-import kotlinx.android.synthetic.main.activity_sign_up.*
+import kotlinx.android.synthetic.main.activity_crear_cuenta.*
 import kotlinx.android.synthetic.main.activity_start_up_screen.signup_btn
 
 class SignUpActivity : AppCompatActivity() {
@@ -19,7 +19,7 @@ class SignUpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.activity_crear_cuenta)
 
         mUserViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
 

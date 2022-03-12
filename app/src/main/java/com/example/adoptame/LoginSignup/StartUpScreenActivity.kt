@@ -10,10 +10,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.adoptame.R
 import com.example.adoptame.UserDashboardActivity
-import kotlinx.android.synthetic.main.activity_sign_up.*
 import kotlinx.android.synthetic.main.activity_start_up_screen.*
 import kotlinx.android.synthetic.main.activity_start_up_screen.signup_btn
-import kotlinx.android.synthetic.main.activity_user_dashboard.*
+
 
 class StartUpScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

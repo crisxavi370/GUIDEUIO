@@ -3,12 +3,12 @@ package com.example.adoptame
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_all_cateogries.*
+import kotlinx.android.synthetic.main.activity_todas_categorias.*
 
 class AllCateogriesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_all_cateogries)
+        setContentView(R.layout.activity_todas_categorias)
 
         //Back to user dashborad
         back_pressed.setOnClickListener {

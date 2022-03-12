@@ -16,7 +16,7 @@
             android:layout_width="126dp"
             android:layout_height="170dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/famosos_icono" />
+            android:src="@drawable/categoria_famosos_icono" />
 
         <TextView
             android:id="@+id/all_place_title"

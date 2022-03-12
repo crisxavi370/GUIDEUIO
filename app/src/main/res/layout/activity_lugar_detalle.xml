@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:fillViewport="true"
 android:layout_height="match_parent"
 android:layout_width="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@drawable/fondo_principal"
 xmlns:android="http://schemas.android.com/apk/res/android">
 
     <RelativeLayout
@@ -26,7 +26,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:padding="15dp"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:src="@drawable/general_back_icon" />
+                android:src="@drawable/regresar_icono_black" />
         </RelativeLayout>
 
         <ImageView
@@ -37,7 +37,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
             android:layout_alignParentEnd="true"
             android:layout_marginTop="44dp"
             android:layout_marginEnd="0dp"
-            android:src="@drawable/famosos_icono" />
+            android:src="@drawable/categoria_famosos_icono" />
 
         <LinearLayout
             android:id="@+id/place_detail_image_title"
@@ -86,7 +86,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/icon_map"
+                android:src="@drawable/lugar_mapa_icono"
                 android:contentDescription="TODO" />
 
             <LinearLayout
@@ -120,7 +120,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/icon_address"
+                android:src="@drawable/lugar_direccion_icono"
                 android:contentDescription="TODO" />
 
             <LinearLayout
@@ -161,7 +161,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/icon_hour"
+                android:src="@drawable/lugar_horario_icono"
                 android:contentDescription="TODO" />
 
             <LinearLayout
@@ -204,7 +204,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/icon_phone"
+                android:src="@drawable/lugar_telefono_icono"
                 android:contentDescription="TODO" />
 
             <LinearLayout
@@ -247,7 +247,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/icon_web"
+                android:src="@drawable/lugar_pagina_icono"
                 android:contentDescription="TODO" />
 
             <LinearLayout
@@ -291,7 +291,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/icon_review"
+                android:src="@drawable/lugar_review_icono"
                 android:contentDescription="TODO" />
 
             <LinearLayout

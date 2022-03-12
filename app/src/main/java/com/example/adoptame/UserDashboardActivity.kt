@@ -6,7 +6,6 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.text.TextUtils
-import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
@@ -26,9 +25,8 @@ import com.example.adoptame.script.ScriptDataActivity
 import com.example.adoptame.viewmodel.CategoriesViewModel
 import com.example.adoptame.viewmodel.PlaceViewModel
 import com.google.android.material.navigation.NavigationView
-import com.lukpheakdey.cityguideapp.webview.ECommerceActivity
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_user_dashboard.*
+import kotlinx.android.synthetic.main.activity_dashboard.*
+
 
 class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
 
@@ -37,7 +35,7 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user_dashboard)
+        setContentView(R.layout.activity_dashboard)
 
         var navigationView= this.findViewById<NavigationView>(R.id.navigation_view)
         var drawerLayout = this.findViewById<DrawerLayout>(R.id.drawer_layout)
@@ -230,12 +228,6 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
         intent.putExtra("CALL_FROM_CATEGORY", "call_from_category")
         intent.putExtra("CATEOGRY_ID", categoryId)
         startActivity(intent)
-    }
-
-    fun intentLoadWeb(url: String) {
-        var i = Intent(applicationContext, ECommerceActivity::class.java)
-        i.putExtra("LOAD_URL", url)
-        startActivity(i)
     }
 
     fun isLogin() : Boolean {

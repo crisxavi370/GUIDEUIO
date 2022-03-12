@@ -16,8 +16,8 @@
         android:background="@color/white"
         android:theme="@style/navigationTheme"
         android:layout_gravity="start"
-        app:headerLayout="@layout/menu_header"
-        app:menu="@menu/main_menu"/>
+        app:headerLayout="@layout/cabezera_design"
+        app:menu="@menu/menu_principal"/>
 
     <LinearLayout
         android:id="@+id/content"
@@ -44,7 +44,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:src="@drawable/menu_open" />
+                android:src="@drawable/menu_menu_icono" />
 
             <ImageView
                 android:id="@+id/login_signup"
@@ -60,7 +60,7 @@
                 android:elevation="6dp"
                 android:onClick="callStartupScreens"
                 android:padding="5dp"
-                android:src="@drawable/login_icon" />
+                android:src="@drawable/login_icono" />
        </RelativeLayout>
 
         <ScrollView
@@ -110,7 +110,7 @@
                             app:boxStrokeWidthFocused="0dp"
                             app:boxStrokeColor="@color/white"
                             app:boxBackgroundColor="@color/white"
-                            android:hint="@string/search_text">
+                            android:hint="@string/buscar_texto">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:inputType="text"
@@ -192,7 +192,7 @@
                             android:layout_marginTop="50dp"
                             android:fontFamily="@font/brandon_grotesque_black"
                             android:lineHeight="24sp"
-                            android:text="@string/featured_locations"
+                            android:text="@string/ubicaciones_destacadas"
                             android:textAllCaps="true"
                             android:textColor="@color/colorAccent"
                             android:textSize="15dp" />
@@ -201,7 +201,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            android:text="@string/featured_locations_description" />
+                            android:text="@string/ubicaciones_destacadas_descripcion" />
                     </LinearLayout>
 
                     <androidx.recyclerview.widget.RecyclerView

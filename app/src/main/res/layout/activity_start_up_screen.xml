@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/fondo"
+    android:background="@drawable/fondo_principal"
     android:padding="30dp"
     tools:context=".LoginSignup.StartUpScreenActivity">
 
@@ -24,7 +24,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/brandon_grotesque_black"
-            android:text="@string/heading"
+            android:text="@string/cabezera"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/black"

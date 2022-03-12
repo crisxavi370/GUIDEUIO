@@ -19,7 +19,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="-1dp"
             android:layout_marginEnd="0dp"
-            android:background="@drawable/big_sur">
+            android:background="@drawable/portada_perfil">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:padding="15dp"
-                    android:src="@drawable/general_back_icon_white" />
+                    android:src="@drawable/regresar_icono_white" />
 
             </RelativeLayout>
         </RelativeLayout>
@@ -51,7 +51,7 @@
             <com.mikhaellopez.circularimageview.CircularImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/userprofile"
+                android:src="@drawable/perfil_usuario_imagen"
                 app:civ_border_color="#BCffffff"
                 app:civ_border_width="10dp" />
 
@@ -104,7 +104,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/icon_8" />
+                    android:src="@drawable/campo_mail_icono" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

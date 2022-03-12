@@ -5,16 +5,13 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.View
 import android.widget.Toast
-import androidx.appcompat.widget.SearchView
-import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-
-import kotlinx.android.synthetic.main.activity_all_places.*
 import androidx.lifecycle.Observer
 import com.example.adoptame.adapter.AllPlacesAdapter
 import com.example.adoptame.model.Place
 import com.example.adoptame.viewmodel.PlaceViewModel
+import kotlinx.android.synthetic.main.activity_todos_lugares.*
 
 
 class AllPlacesActivity : AppCompatActivity() {
@@ -25,7 +22,7 @@ class AllPlacesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_all_places)
+        setContentView(R.layout.activity_todos_lugares)
 
         var intent_extra : String? = ""
         intent_extra = intent.getStringExtra("CALL_FROM_CATEGORY")
@@ -104,7 +101,7 @@ class AllPlacesActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.search_menu, menu)
+        menuInflater.inflate(R.menu.menu_busqueda, menu)
         return super.onCreateOptionsMenu(menu)
     }
 }

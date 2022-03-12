@@ -31,7 +31,7 @@ class OnBoardingActivity : AppCompatActivity() {
             finish()
         }
 
-        setContentView(R.layout.activity_on_boarding)
+        setContentView(R.layout.activity_onboarding)
         //Toast.makeText(this, "Welcome Pheakdey Developer", Toast.LENGTH_SHORT).show()
 
         tabLayout = findViewById(R.id.tab_indicator)
@@ -39,9 +39,9 @@ class OnBoardingActivity : AppCompatActivity() {
 
         // add some data to model
         val onBoardingData:MutableList<OnBoardingData> = ArrayList()
-        onBoardingData.add(OnBoardingData("Historia de la ciudad de Quito I", "La historia de Quito se remonta a los primeros habitantes que poblaron las regiones orientales del Distrito alrededor del año 1030 a.C., en el sector del Inca. Si bien existen restos arqueológicos que demuestran que la ciudad estuvo poblada durante siglos, se desconoce el momento exacto de su fundación.", R.drawable.searching))
-        onBoardingData.add(OnBoardingData("Historia de la ciudad de Quito II", "Más adelante, con la llegada de los Incas, Quito se convertiría en una ciudad importante de la zona norte del Tahuantinsuyo y tras la destrucción de Tomebamba se transformó en la segunda capital de imperio Inca. ", R.drawable.shopping))
-        onBoardingData.add(OnBoardingData("Historia de la ciudad de Quito III", "El 6 de diciembre de 1534 la ciudad sería conquistada por los españoles y es, a partir de esa fecha, que se considera su fundación. Durante la colonia sería el centro político del actual Ecuador, la segunda ciudad en ser fundada en territorio ecuatoriano y desde aquella época la capital y principal urbe de la nación.", R.drawable.vlog))
+        onBoardingData.add(OnBoardingData("Historia de la ciudad de Quito I", "La historia de Quito se remonta a los primeros habitantes que poblaron las regiones orientales del Distrito alrededor del año 1030 a.C., en el sector del Inca. Si bien existen restos arqueológicos que demuestran que la ciudad estuvo poblada durante siglos, se desconoce el momento exacto de su fundación.", R.drawable.onboarding_pantalla_1))
+        onBoardingData.add(OnBoardingData("Historia de la ciudad de Quito II", "Más adelante, con la llegada de los Incas, Quito se convertiría en una ciudad importante de la zona norte del Tahuantinsuyo y tras la destrucción de Tomebamba se transformó en la segunda capital de imperio Inca. ", R.drawable.onboarding_pantalla_2))
+        onBoardingData.add(OnBoardingData("Historia de la ciudad de Quito III", "El 6 de diciembre de 1534 la ciudad sería conquistada por los españoles y es, a partir de esa fecha, que se considera su fundación. Durante la colonia sería el centro político del actual Ecuador, la segunda ciudad en ser fundada en territorio ecuatoriano y desde aquella época la capital y principal urbe de la nación.", R.drawable.onboarding_pantalla_3))
 
         setOnBoardingViewPagerAdapter(onBoardingData)
 

@@ -11,9 +11,9 @@ import com.bumptech.glide.Glide
 import com.example.adoptame.PlaceDetailActivity
 import com.example.adoptame.R
 import com.example.adoptame.model.Place
-import kotlinx.android.synthetic.main.all_places_card_design.view.*
+import kotlinx.android.synthetic.main.activity_lugar_detalle.view.all_place_rating
+import kotlinx.android.synthetic.main.lugares_design.view.*
 import java.util.*
-import kotlin.collections.ArrayList
 
 class AllPlacesAdapter: RecyclerView.Adapter<AllPlacesAdapter.MyViewHolder>() {
 
@@ -28,7 +28,7 @@ class AllPlacesAdapter: RecyclerView.Adapter<AllPlacesAdapter.MyViewHolder>() {
         parent: ViewGroup,
         viewType: Int
     ): AllPlacesAdapter.MyViewHolder {
-       return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.all_places_card_design, parent, false))
+       return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.lugares_design, parent, false))
     }
 
     override fun onBindViewHolder(holder: AllPlacesAdapter.MyViewHolder, position: Int) {

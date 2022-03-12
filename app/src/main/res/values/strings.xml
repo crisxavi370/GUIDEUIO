@@ -3,67 +3,59 @@
     <string name="power_by">GuideUIO</string>
     <string name="slogan_name">Disfruta de la ciudad de Quito</string>
     <string name="logo_name">Búsqueda</string>
-
-    <!--     General Menu names     -->
-    <string name="home">PRINCIPAL</string>
-    <string name="search">BÚSQUEDA</string>
-    <string name="all_places">LUGARES PARA VISITAR</string>
-    <string name="all_categories">TODAS LAS CATEGORIAS</string>
-    <string name="add_missing_place">AÑADIR LUGAR</string>
-    <string name="profile">Perfil</string>
+    <!--Menú Principal-->
+    <string name="principal">PRINCIPAL</string>
+    <string name="busqueda">BÚSQUEDA</string>
+    <string name="todos_lugares">LUGARES PARA VISITAR</string>
+    <string name="todas_categorias">TODAS LAS CATEGORIAS</string>
+    <string name="nuevo">AÑADIR</string>
+    <string name="perfil">Perfil</string>
     <string name="logout">Cerrar Sesión</string>
     <string name="login">Iniciar Sesión</string>
-    <string name="share">Compartir</string>
-    <string name="rate_us">Valorar</string>
+    <string name="compartir">Compartir</string>
+    <string name="valorar">Valorar</string>
     <string name="e_commerce">Shopping E-commerce </string>
     <string name="script">Mostrar Contenido </string>
     <string name="food_delivery">Food Delivery </string>
     <string name="taxi">Taxi </string>
-
-    <!--     All Categories Menu names     -->
-    <string name="expand_all">Ver más</string>
-    <string name="car_rent">Parques</string>
+    <!--Menu Categorias-->
+    <string name="mostrar_mas">Ver más</string>
+    <string name="parques">Parques</string>
     <string name="all_shops">All Shops</string>
-
-    <!--  Titles and Descriptions  -->
-    <string name="featured_locations">Ubiaciones destacadas</string>
-    <string name="featured_locations_description">Lo más destacado de la ciudad</string>
-    <string name="most_viewed_locations">Most Viewed</string>
-    <string name="categories">Categorias</string>
-    <string name="view_all">Ver Todo</string>
-    <string name="search_text">Buscando...</string>
-
-    <!--  Categories  -->
-    <string name="hotels">Hoteles</string>
-    <string name="restaurants">Restaurantes</string>
-    <string name="shops">Recomendaciones</string>
+    <!--Titulos y descripciones-->
+    <string name="ubicaciones_destacadas">Ubicaciones destacadas</string>
+    <string name="ubicaciones_destacadas_descripcion">Lo más destacado de la ciudad</string>
+    <string name="ubicaciones_mas_visitadas">Lugares más vistos</string>
+    <string name="categorias">Categorias</string>
+    <string name="mostrar_todo">Ver Todo</string>
+    <string name="buscar_texto">Buscando...</string>
+    <!--Categorias-->
+    <string name="hoteles">Hoteles</string>
+    <string name="restaurantes">Restaurantes</string>
+    <string name="recomendaciones">Recomendaciones</string>
     <string name="banks">Banks</string>
     <string name="airports">Airports</string>
-    <string name="education">Lugares Famosos</string>
+    <string name="lugares_famosos">Lugares Famosos</string>
     <string name="hospitals">Hospitals</string>
-
-    <!--Buttons-->
-    <string name="skip_btn">Skip</string>
-    <string name="next_btn">Next</string>
-    <string name="let_get_started">Lets Get Started</string>
-
-    <!--  General Strings  -->
+    <!--Botones-->
+    <string name="btn_omitir">Omitir</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="btn_empezar">Empezar</string>
+    <!--Textos-->
     <string name="sign_up">Sign Up</string>
-    <string name="heading">Enjoy\nTraveling</string>
-    <string name="tag_line">Provider the best location</string>
-    <string name="create_account">Crear\nCuenta</string>
+    <string name="cabezera">Bienvenido a\nQuito</string>
+    <string name="tag_line">La mejor ubicación</string>
+    <string name="crear_cuenta">Crear\nCuenta</string>
     <string name="how_we_work">How we work?</string>
-    <string name="remember_me">Recordar Usuario</string>
-    <string name="forget_password">Olvidé mi contraseña</string>
-
-    <!--  Field Strings  -->
-    <string name="enter_first_name">Nombre</string>
-    <string name="enter_last_name">Apellido</string>
+    <string name="recordar_usuario">Recordar Usuario</string>
+    <string name="recordar_contra">Olvidé mi contraseña</string>
+    <!--Campos-->
+    <string name="enter_nombre">Nombre</string>
+    <string name="enter_apellido">Apellido</string>
     <string name="enter_email">Email</string>
-    <string name="enter_phone_number">Teléfono</string>
+    <string name="enter_telefono">Teléfono</string>
     <string name="enter_password">Contraseña</string>
-    <string name="title_activity_all_places">AllPlacesActivity</string>
-
-    <string name="hello_world">Mensaje</string>
-    <string name="personal">  Contacto</string>
+    <string name="titulo_todos_lugares">Todos los Lugares</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="contacto"> Contacto</string>
 </resources>
