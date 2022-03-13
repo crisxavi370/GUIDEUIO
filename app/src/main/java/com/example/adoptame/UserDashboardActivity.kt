@@ -71,7 +71,7 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
                 intent.putExtra("SEARCH_DATA", value_data)
                 startActivity(intent)
             } else {
-                Toast.makeText(this, "Please input data for search", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "No se puede buscar datos vacios", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -148,12 +148,12 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
             R.id.nav_all_categories -> {
-                Toast.makeText(this, "This all Category", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Todas las categorias", Toast.LENGTH_SHORT).show()
                 var i = Intent(applicationContext, AllCateogriesActivity::class.java)
                 startActivity(i)
             }
             R.id.nav_all_places -> {
-                Toast.makeText(this, "This all place", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Todos los lugares", Toast.LENGTH_SHORT).show()
                 var i = Intent(applicationContext, AllPlacesActivity::class.java)
                 startActivity(i)
             }

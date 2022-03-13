@@ -79,7 +79,7 @@ class AllPlacesActivity : AppCompatActivity() {
             if(place.isEmpty()) {
                 empty_view.setVisibility(View.VISIBLE)
                 empty_view_txt.setVisibility(View.VISIBLE)
-                Toast.makeText(this, "Search Place is not found", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Lugar no encontrado", Toast.LENGTH_LONG).show()
             } else {
                 adapter.setData(place)
             }

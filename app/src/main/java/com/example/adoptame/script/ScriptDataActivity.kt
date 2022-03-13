@@ -49,7 +49,7 @@ class ScriptDataActivity : AppCompatActivity() {
         val color = "#d4cbe5"
         val category = Categories(0, name, desc, image, color)
         mCategoriesViewModel.addCategory(category)
-        Toast.makeText(this, "Create category 1 ", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Categoria 1 creada", Toast.LENGTH_SHORT).show()
     }
 
     //simple to create category
@@ -60,7 +60,7 @@ class ScriptDataActivity : AppCompatActivity() {
         val color1 = "#947AE8"
         val category1 = Categories(0, name1, desc1, image1, color1)
         mCategoriesViewModel.addCategory(category1)
-        Toast.makeText(this, "Create category 2 ", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Categoria 2 creada", Toast.LENGTH_SHORT).show()
     }
 
     //simple to create category
@@ -71,7 +71,7 @@ class ScriptDataActivity : AppCompatActivity() {
         val color2 = "#7adccf"
         val category2 = Categories(0, name2, desc2, image2, color2)
         mCategoriesViewModel.addCategory(category2)
-        Toast.makeText(this, "Create category 3", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Categoria 3 creada", Toast.LENGTH_SHORT).show()
     }
 
     //simple to create category
@@ -82,7 +82,7 @@ class ScriptDataActivity : AppCompatActivity() {
         val color3 = "#f7c59f"
         val category3 = Categories(0, name3, desc3, image3, color3)
         mCategoriesViewModel.addCategory(category3)
-        Toast.makeText(this, "Create category 4", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Categoria 4 creada", Toast.LENGTH_SHORT).show()
     }
 
     //simple to create category
@@ -93,7 +93,7 @@ class ScriptDataActivity : AppCompatActivity() {
         val color4 = "#b8d7f5"
         val category4 = Categories(0, name4, desc4, image4, color4)
         mCategoriesViewModel.addCategory(category4)
-        Toast.makeText(this, "Create category 5", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Categoria 5 creada", Toast.LENGTH_SHORT).show()
     }
 
     //Simple input Place to table
@@ -940,7 +940,7 @@ class ScriptDataActivity : AppCompatActivity() {
         mPlaceViewModel.addPlace(place24)
         mPlaceViewModel.addPlace(place25)
 
-        Toast.makeText(this, "Create Place Successful !!!!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Lugares Creados con exito", Toast.LENGTH_SHORT).show()
     }
 
 }

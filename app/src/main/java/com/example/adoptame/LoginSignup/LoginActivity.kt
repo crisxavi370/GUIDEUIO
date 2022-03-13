@@ -41,16 +41,16 @@ class LoginActivity : AppCompatActivity() {
                 var userpassword = mUserViewModel.findUserByEmailPassword(email, password)
                 userpassword.observe(this, Observer { emailandpassword ->
                    if(emailandpassword.isEmpty()){
-                       Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
+                       Toast.makeText(this, "Usuario o Contraseña Incorrecta", Toast.LENGTH_SHORT).show()
                    } else {
                        sharePreferenceEmailPassword(email, password)
                        // call user dashboard intent
                        userDashboard()
-                       Toast.makeText(this, "Sucessfully login", Toast.LENGTH_SHORT).show()
+                       Toast.makeText(this, "Inicio de sesión Correcto", Toast.LENGTH_SHORT).show()
                    }
                 })
             } else {
-                Toast.makeText(this, "Please fill out all fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Debe llenar todos los campos", Toast.LENGTH_SHORT).show()
             }
         }
 

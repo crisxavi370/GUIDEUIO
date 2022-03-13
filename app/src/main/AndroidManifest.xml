@@ -17,8 +17,6 @@
             android:exported="false"/>
         <activity android:name=".script.ScriptDataActivity"
             android:exported="false"/>
-        <activity android:name="com.example.adoptame.webview.ECommerceActivity"
-            android:exported="false"/>
         <activity android:name=".PlaceDetailActivity"
             android:exported="false"/>
         <activity

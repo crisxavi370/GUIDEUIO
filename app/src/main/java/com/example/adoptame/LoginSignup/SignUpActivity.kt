@@ -34,9 +34,9 @@ class SignUpActivity : AppCompatActivity() {
                 mUserViewModel.addUser(user)
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
-                Toast.makeText(this, "Have created account succesfull. Please Login again!!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Cuenta creada con exito. Inicia sesión", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "Please fill out all fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Debe llenar todos los campos", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -63,9 +63,9 @@ class SignUpActivity : AppCompatActivity() {
             mUserViewModel.addUser(user)
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-            Toast.makeText(this, "Have created account succesfull. Please Login again!!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Cuenta creada con exito. Inicia sesión", Toast.LENGTH_SHORT).show()
         } else {
-            Toast.makeText(this, "Please fill out all fields", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Debe llenar todos los campos", Toast.LENGTH_SHORT).show()
         }
     }
 
