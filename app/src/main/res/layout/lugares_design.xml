@@ -6,7 +6,7 @@
     android:layout_margin="10dp">
 
     <RelativeLayout
-        android:background="#151515"
+        android:background="@color/black"
         android:id="@+id/all_place_card"
         android:layout_width="match_parent"
         android:layout_height="170dp">
@@ -28,7 +28,7 @@
             android:layout_toRightOf="@id/all_place_image"
             android:fontFamily="@font/brandon_grotesque_black"
             android:lineHeight="20dp"
-            android:text="General Store"
+            android:text="Lugar"
             android:textColor="@color/white"
             android:textSize="20sp" />
 

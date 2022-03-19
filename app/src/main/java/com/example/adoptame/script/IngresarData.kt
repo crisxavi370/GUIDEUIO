@@ -5,26 +5,26 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.adoptame.R
-import com.example.adoptame.model.Categories
+import com.example.adoptame.model.Categorias
 import com.example.adoptame.model.Place
-import com.example.adoptame.viewmodel.CategoriesViewModel
-import com.example.adoptame.viewmodel.PlaceViewModel
+import com.example.adoptame.viewmodel.CategoriasViewModel
+import com.example.adoptame.viewmodel.LugaresViewModel
 import kotlinx.android.synthetic.main.activity_mostrar_datos.*
 
 
 
-class ScriptDataActivity : AppCompatActivity() {
+class IngresarData : AppCompatActivity() {
 
-    private lateinit var mCategoriesViewModel: CategoriesViewModel
+    private lateinit var mCategoriasViewModel: CategoriasViewModel
 
-    private lateinit var mPlaceViewModel: PlaceViewModel
+    private lateinit var mLugaresViewModel: LugaresViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mostrar_datos)
 
-        mCategoriesViewModel = ViewModelProvider(this).get(CategoriesViewModel::class.java)
-        mPlaceViewModel = ViewModelProvider(this).get(PlaceViewModel::class.java)
+        mCategoriasViewModel = ViewModelProvider(this).get(CategoriasViewModel::class.java)
+        mLugaresViewModel = ViewModelProvider(this).get(LugaresViewModel::class.java)
 
         btn_create_category.setOnClickListener {
             runAddCategories()
@@ -47,8 +47,8 @@ class ScriptDataActivity : AppCompatActivity() {
         val desc = "Los mejores lugares para disfrutar comida típica"
         val image = "restaurant_image"
         val color = "#d4cbe5"
-        val category = Categories(0, name, desc, image, color)
-        mCategoriesViewModel.addCategory(category)
+        val category = Categorias(0, name, desc, image, color)
+        mCategoriasViewModel.addCategory(category)
         Toast.makeText(this, "Categoria 1 creada", Toast.LENGTH_SHORT).show()
     }
 
@@ -58,8 +58,8 @@ class ScriptDataActivity : AppCompatActivity() {
         val desc1 = "Los mejores parques de la ciudad"
         val image1 = "categories_park_icon"
         val color1 = "#947AE8"
-        val category1 = Categories(0, name1, desc1, image1, color1)
-        mCategoriesViewModel.addCategory(category1)
+        val category1 = Categorias(0, name1, desc1, image1, color1)
+        mCategoriasViewModel.addCategory(category1)
         Toast.makeText(this, "Categoria 2 creada", Toast.LENGTH_SHORT).show()
     }
 
@@ -69,8 +69,8 @@ class ScriptDataActivity : AppCompatActivity() {
         val desc2 = "Los mejores lugares para descansar"
         val image2 = "hotel_image"
         val color2 = "#7adccf"
-        val category2 = Categories(0, name2, desc2, image2, color2)
-        mCategoriesViewModel.addCategory(category2)
+        val category2 = Categorias(0, name2, desc2, image2, color2)
+        mCategoriasViewModel.addCategory(category2)
         Toast.makeText(this, "Categoria 3 creada", Toast.LENGTH_SHORT).show()
     }
 
@@ -80,8 +80,8 @@ class ScriptDataActivity : AppCompatActivity() {
         val desc3 = "Lugares con historia en la ciudad"
         val image3 = "famosos_icono"
         val color3 = "#f7c59f"
-        val category3 = Categories(0, name3, desc3, image3, color3)
-        mCategoriesViewModel.addCategory(category3)
+        val category3 = Categorias(0, name3, desc3, image3, color3)
+        mCategoriasViewModel.addCategory(category3)
         Toast.makeText(this, "Categoria 4 creada", Toast.LENGTH_SHORT).show()
     }
 
@@ -91,8 +91,8 @@ class ScriptDataActivity : AppCompatActivity() {
         val desc4 = "There are alot mall around here"
         val image4 = "recomendaciones_icono"
         val color4 = "#b8d7f5"
-        val category4 = Categories(0, name4, desc4, image4, color4)
-        mCategoriesViewModel.addCategory(category4)
+        val category4 = Categorias(0, name4, desc4, image4, color4)
+        mCategoriasViewModel.addCategory(category4)
         Toast.makeText(this, "Categoria 5 creada", Toast.LENGTH_SHORT).show()
     }
 
@@ -915,30 +915,30 @@ class ScriptDataActivity : AppCompatActivity() {
             category_id25
         )
 
-        mPlaceViewModel.addPlace(place)
-        mPlaceViewModel.addPlace(place1)
-        mPlaceViewModel.addPlace(place3)
-        mPlaceViewModel.addPlace(place4)
-        mPlaceViewModel.addPlace(place5)
-        mPlaceViewModel.addPlace(place6)
-        mPlaceViewModel.addPlace(place7)
-        mPlaceViewModel.addPlace(place9)
-        mPlaceViewModel.addPlace(place10)
-        mPlaceViewModel.addPlace(place11)
-        mPlaceViewModel.addPlace(place12)
-        mPlaceViewModel.addPlace(place13)
-        mPlaceViewModel.addPlace(place14)
-        mPlaceViewModel.addPlace(place15)
-        mPlaceViewModel.addPlace(place16)
-        mPlaceViewModel.addPlace(place17)
-        mPlaceViewModel.addPlace(place18)
-        mPlaceViewModel.addPlace(place19)
-        mPlaceViewModel.addPlace(place20)
-        mPlaceViewModel.addPlace(place21)
-        mPlaceViewModel.addPlace(place22)
-        mPlaceViewModel.addPlace(place23)
-        mPlaceViewModel.addPlace(place24)
-        mPlaceViewModel.addPlace(place25)
+        mLugaresViewModel.addPlace(place)
+        mLugaresViewModel.addPlace(place1)
+        mLugaresViewModel.addPlace(place3)
+        mLugaresViewModel.addPlace(place4)
+        mLugaresViewModel.addPlace(place5)
+        mLugaresViewModel.addPlace(place6)
+        mLugaresViewModel.addPlace(place7)
+        mLugaresViewModel.addPlace(place9)
+        mLugaresViewModel.addPlace(place10)
+        mLugaresViewModel.addPlace(place11)
+        mLugaresViewModel.addPlace(place12)
+        mLugaresViewModel.addPlace(place13)
+        mLugaresViewModel.addPlace(place14)
+        mLugaresViewModel.addPlace(place15)
+        mLugaresViewModel.addPlace(place16)
+        mLugaresViewModel.addPlace(place17)
+        mLugaresViewModel.addPlace(place18)
+        mLugaresViewModel.addPlace(place19)
+        mLugaresViewModel.addPlace(place20)
+        mLugaresViewModel.addPlace(place21)
+        mLugaresViewModel.addPlace(place22)
+        mLugaresViewModel.addPlace(place23)
+        mLugaresViewModel.addPlace(place24)
+        mLugaresViewModel.addPlace(place25)
 
         Toast.makeText(this, "Lugares Creados con exito", Toast.LENGTH_SHORT).show()
     }

@@ -7,7 +7,7 @@ import android.os.Handler
 import android.view.animation.AnimationUtils;
 import kotlinx.android.synthetic.main.activity_pantalla_splash.*
 
-class SplashScreenActivity : AppCompatActivity() {
+class Activity_ventana_splash : AppCompatActivity() {
 
     lateinit var handler: Handler
 
@@ -21,7 +21,7 @@ class SplashScreenActivity : AppCompatActivity() {
         handler = Handler()
         handler.postDelayed({
             // Delay and Start Activity
-            val intent = Intent(this, OnBoardingActivity::class.java)
+            val intent = Intent(this, Activity_onboarding::class.java)
             startActivity(intent)
             finish()
         } , 3000) // here we're delaying to startActivity after 3seconds

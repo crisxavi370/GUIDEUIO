@@ -4,13 +4,13 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.example.adoptame.data.CityGuideDatabase
+import com.example.adoptame.data.GUIDEUIODB
 import com.example.adoptame.model.Place
-import com.example.adoptame.repository.PlaceRepository
+import com.example.adoptame.repository.LugaresRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class PlaceViewModel(application: Application): AndroidViewModel(application) {
+class LugaresViewModel(application: Application): AndroidViewModel(application) {
 
     val readAllDataPlace: LiveData<List<Place>>
 
@@ -18,12 +18,12 @@ class PlaceViewModel(application: Application): AndroidViewModel(application) {
 
     lateinit var readAllPlaceByCategory: LiveData<List<Place>>
 
-    private val repository: PlaceRepository
+    private val repository: LugaresRepository
 
     init {
-        val placeDao = CityGuideDatabase.getDatabase(application).placeDao()
+        val placeDao = GUIDEUIODB.getDatabase(application).placeDao()
 
-        repository = PlaceRepository(placeDao)
+        repository = LugaresRepository(placeDao)
         readAllDataPlace = repository.readAllDataPlace
         readAllDataPlaceWithFeature = repository.readAllDatPlaceWithFeature
     }

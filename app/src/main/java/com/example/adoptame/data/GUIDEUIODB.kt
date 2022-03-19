@@ -4,27 +4,27 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.adoptame.model.Categories
+import com.example.adoptame.model.Categorias
 import com.example.adoptame.model.Place
-import com.example.adoptame.model.User
+import com.example.adoptame.model.Usuario
 
 
 
-@Database(entities = [User::class, Categories::class, Place::class], version = 2, exportSchema = false)
-abstract class CityGuideDatabase : RoomDatabase() {
+@Database(entities = [Usuario::class, Categorias::class, Place::class], version = 2, exportSchema = false)
+abstract class GUIDEUIODB : RoomDatabase() {
 
-    abstract fun userDao(): UserDao
+    abstract fun userDao(): UsuarioDao
 
-    abstract fun categoriesDao(): CategoriesDao
+    abstract fun categoriesDao(): CategoriasDao
 
-    abstract fun placeDao(): PlaceDao
+    abstract fun placeDao(): LugaresDao
 
     companion object {
 
         @Volatile
-        private var INSTANCE: CityGuideDatabase? = null
+        private var INSTANCE: GUIDEUIODB? = null
 
-        fun getDatabase(context: Context) : CityGuideDatabase {
+        fun getDatabase(context: Context) : GUIDEUIODB {
             val tempInstance = INSTANCE
 
             if(tempInstance != null) {
@@ -34,7 +34,7 @@ abstract class CityGuideDatabase : RoomDatabase() {
             synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    CityGuideDatabase::class.java,
+                    GUIDEUIODB::class.java,
                     "city_guide_database"
                 ).build()
                 INSTANCE = instance

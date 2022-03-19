@@ -18,20 +18,19 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.adoptame.LoginSignup.LoginActivity
 import com.example.adoptame.LoginSignup.StartUpScreenActivity
-import com.example.adoptame.adapter.CategorieAdapter
-import com.example.adoptame.adapter.CategoriesCardIconAdapter
-import com.example.adoptame.adapter.FeatureAdapter
-import com.example.adoptame.script.ScriptDataActivity
-import com.example.adoptame.viewmodel.CategoriesViewModel
-import com.example.adoptame.viewmodel.PlaceViewModel
+import com.example.adoptame.adapter.Adapter_CategoriasCards
+import com.example.adoptame.adapter.Adapter_Principales
+import com.example.adoptame.script.IngresarData
+import com.example.adoptame.viewmodel.CategoriasViewModel
+import com.example.adoptame.viewmodel.LugaresViewModel
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
 
-class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
+class Activity_Dashboard : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
 
-    private lateinit var mCategoriesViewModel: CategoriesViewModel
-    private lateinit var mPlaceViewModel: PlaceViewModel
+    private lateinit var mCategoriasViewModel: CategoriasViewModel
+    private lateinit var mLugaresViewModel: LugaresViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,15 +57,13 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
         }
 
         naviagtionDrawer()
-
-        categoriesRecycler()
         featuredRecycler()
         cardCategoryIconRecycler()
 
         search_place.setOnClickListener {
             val value_data =  et_search.editText?.text.toString().trim()
             if(inputCheck(value_data)){
-                var intent = Intent(applicationContext, AllPlacesActivity::class.java)
+                var intent = Intent(applicationContext, Activity_todos_lugares::class.java)
                 intent.putExtra("CALL_FOR_SEARCH", "call_for_search")
                 intent.putExtra("SEARCH_DATA", value_data)
                 startActivity(intent)
@@ -81,29 +78,15 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
         return !(TextUtils.isEmpty(search))
     }
 
-    fun categoriesRecycler(){
-        //RecyclerView
-        val adapter = CategorieAdapter()
-        categories_recycler.adapter = adapter
-        categories_recycler.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-
-        // CategoryViewModel
-        mCategoriesViewModel = ViewModelProvider(this).get(CategoriesViewModel::class.java)
-        mCategoriesViewModel.readAllDataCategory.observe(this, Observer { category ->
-            adapter.setData(category)
-        })
-
-    }
-
     fun featuredRecycler() {
         //RecyclerView
-        val adapter = FeatureAdapter()
+        val adapter = Adapter_Principales()
         featured_recycler.adapter = adapter
         featured_recycler.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
-        // PlaceViewModel
-        mPlaceViewModel = ViewModelProvider(this).get(PlaceViewModel::class.java)
-        mPlaceViewModel.readAllDataPlaceWithFeature.observe(this, Observer { place ->
+        // LugaresViewModel
+        mLugaresViewModel = ViewModelProvider(this).get(LugaresViewModel::class.java)
+        mLugaresViewModel.readAllDataPlaceWithFeature.observe(this, Observer { place ->
             adapter.setData(place)
         })
 
@@ -149,12 +132,12 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
         when(item.itemId) {
             R.id.nav_all_categories -> {
                 Toast.makeText(this, "Todas las categorias", Toast.LENGTH_SHORT).show()
-                var i = Intent(applicationContext, AllCateogriesActivity::class.java)
+                var i = Intent(applicationContext, Activity_todas_categorias::class.java)
                 startActivity(i)
             }
             R.id.nav_all_places -> {
                 Toast.makeText(this, "Todos los lugares", Toast.LENGTH_SHORT).show()
-                var i = Intent(applicationContext, AllPlacesActivity::class.java)
+                var i = Intent(applicationContext, Activity_todos_lugares::class.java)
                 startActivity(i)
             }
             R.id.nav_restaurants ->{
@@ -174,7 +157,7 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
             }
 
             R.id.nav_script -> {
-                var i = Intent(applicationContext, ScriptDataActivity::class.java)
+                var i = Intent(applicationContext, IngresarData::class.java)
                 startActivity(i)
             }
             R.id.nav_logout -> {
@@ -186,7 +169,7 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
                 startActivity(i)
             }
             R.id.nav_profile -> {
-                var i = Intent(applicationContext, ProfileActivity::class.java)
+                var i = Intent(applicationContext, Activity_perfil::class.java)
                 startActivity(i)
             }
         }
@@ -212,19 +195,19 @@ class UserDashboardActivity : AppCompatActivity(), NavigationView.OnNavigationIt
 
     fun cardCategoryIconRecycler(){
         //RecyclerView
-        val adapter = CategoriesCardIconAdapter()
+        val adapter = Adapter_CategoriasCards()
         card_cateogry_icon_viewed_recycler.adapter = adapter
         card_cateogry_icon_viewed_recycler.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
         // CategoryViewModel
-        mCategoriesViewModel = ViewModelProvider(this).get(CategoriesViewModel::class.java)
-        mCategoriesViewModel.readAllDataCategory.observe(this, Observer { category ->
+        mCategoriasViewModel = ViewModelProvider(this).get(CategoriasViewModel::class.java)
+        mCategoriasViewModel.readAllDataCategory.observe(this, Observer { category ->
             adapter.setData(category)
         })
     }
 
     fun intentActionGo(categoryId: Int) {
-        var intent = Intent(applicationContext, AllPlacesActivity::class.java)
+        var intent = Intent(applicationContext, Activity_todos_lugares::class.java)
         intent.putExtra("CALL_FROM_CATEGORY", "call_from_category")
         intent.putExtra("CATEOGRY_ID", categoryId)
         startActivity(intent)

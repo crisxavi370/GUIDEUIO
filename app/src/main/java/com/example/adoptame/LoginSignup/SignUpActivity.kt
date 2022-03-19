@@ -7,21 +7,21 @@ import android.text.TextUtils
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.adoptame.R
-import com.example.adoptame.UserDashboardActivity
-import com.example.adoptame.model.User
-import com.example.adoptame.viewmodel.UserViewModel
+import com.example.adoptame.Activity_Dashboard
+import com.example.adoptame.model.Usuario
+import com.example.adoptame.viewmodel.UsuarioViewModel
 import kotlinx.android.synthetic.main.activity_crear_cuenta.*
 import kotlinx.android.synthetic.main.activity_start_up_screen.signup_btn
 
 class SignUpActivity : AppCompatActivity() {
 
-    private lateinit var mUserViewModel: UserViewModel
+    private lateinit var mUsuarioViewModel: UsuarioViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_cuenta)
 
-        mUserViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
+        mUsuarioViewModel = ViewModelProvider(this).get(UsuarioViewModel::class.java)
 
         signup_btn.setOnClickListener {
             //insertDataToDatabase()
@@ -30,8 +30,8 @@ class SignUpActivity : AppCompatActivity() {
             val email = signup_email.editText?.text.toString().trim()
             val password = signup_password.editText?.text.toString().trim()
             if(inputCheck(firstname, lastnane, email, password )) {
-                val user = User(0, firstname, lastnane, email, password)
-                mUserViewModel.addUser(user)
+                val user = Usuario(0, firstname, lastnane, email, password)
+                mUsuarioViewModel.addUser(user)
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 Toast.makeText(this, "Cuenta creada con exito. Inicia sesión", Toast.LENGTH_SHORT).show()
@@ -46,7 +46,7 @@ class SignUpActivity : AppCompatActivity() {
         }
 
         signup_back_button.setOnClickListener {
-            val intent = Intent(this, UserDashboardActivity::class.java)
+            val intent = Intent(this, Activity_Dashboard::class.java)
             startActivity(intent)
         }
 
@@ -59,8 +59,8 @@ class SignUpActivity : AppCompatActivity() {
         val email = signup_email.editText?.text.toString().trim()
         val password = signup_password.editText?.text.toString().trim()
         if(inputCheck(firstname, lastnane, email, password )) {
-            val user = User(0, firstname, lastnane, email, password)
-            mUserViewModel.addUser(user)
+            val user = Usuario(0, firstname, lastnane, email, password)
+            mUsuarioViewModel.addUser(user)
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             Toast.makeText(this, "Cuenta creada con exito. Inicia sesión", Toast.LENGTH_SHORT).show()

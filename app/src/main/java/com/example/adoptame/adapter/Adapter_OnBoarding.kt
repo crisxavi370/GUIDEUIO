@@ -8,12 +8,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
 import com.example.adoptame.R
-import com.example.adoptame.model.OnBoardingData
+import com.example.adoptame.model.OnBoarding
 
 
-class OnBoardingViewPagerAdapter(private var context:Context, private var onBoardingDataList: List<OnBoardingData>): PagerAdapter() {
+class Adapter_OnBoarding(private var context:Context, private var onBoardingList: List<OnBoarding>): PagerAdapter() {
     override fun getCount(): Int {
-        return onBoardingDataList.size
+        return onBoardingList.size
     }
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
@@ -34,9 +34,9 @@ class OnBoardingViewPagerAdapter(private var context:Context, private var onBoar
         title = view.findViewById(R.id.title)
         desc = view.findViewById(R.id.desc)
 
-        imageView.setImageResource(onBoardingDataList[position].imageUrl)
-        title.text = onBoardingDataList[position].title
-        desc.text = onBoardingDataList[position].desc
+        imageView.setImageResource(onBoardingList[position].imageUrl)
+        title.text = onBoardingList[position].title
+        desc.text = onBoardingList[position].desc
 
         container.addView(view)
         return view

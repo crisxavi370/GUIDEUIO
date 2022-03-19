@@ -8,14 +8,13 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.adoptame.PlaceDetailActivity
+import com.example.adoptame.Activity_lugar_detalle
 import com.example.adoptame.R
 import com.example.adoptame.model.Place
 import kotlinx.android.synthetic.main.activity_lugar_detalle.view.all_place_rating
 import kotlinx.android.synthetic.main.lugares_design.view.*
-import java.util.*
 
-class AllPlacesAdapter: RecyclerView.Adapter<AllPlacesAdapter.MyViewHolder>() {
+class Adapter_TodosLuagres: RecyclerView.Adapter<Adapter_TodosLuagres.MyViewHolder>() {
 
     lateinit var context: Context
     private var placeList = emptyList<Place>()
@@ -27,11 +26,11 @@ class AllPlacesAdapter: RecyclerView.Adapter<AllPlacesAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): AllPlacesAdapter.MyViewHolder {
+    ): Adapter_TodosLuagres.MyViewHolder {
        return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.lugares_design, parent, false))
     }
 
-    override fun onBindViewHolder(holder: AllPlacesAdapter.MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: Adapter_TodosLuagres.MyViewHolder, position: Int) {
 
         val currentItem = placeList[position]
         holder.itemView.all_place_title.text = currentItem.place_name.toString()
@@ -42,7 +41,7 @@ class AllPlacesAdapter: RecyclerView.Adapter<AllPlacesAdapter.MyViewHolder>() {
         Glide.with(holder.itemView.context).load(urlImage).into(holder.itemView.all_place_image)
 
         holder.itemView.all_place_card.setOnClickListener {
-            var intent = Intent(holder.itemView.context, PlaceDetailActivity::class.java)
+            var intent = Intent(holder.itemView.context, Activity_lugar_detalle::class.java)
             intent.putExtra("PLACE_NAME", currentItem.place_name.toString())
             intent.putExtra("PLACE_DESC", currentItem.place_desc.toString())
             intent.putExtra("PLACE_PHONE", currentItem.phone.toString())

@@ -8,17 +8,17 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.lifecycle.Observer
-import com.example.adoptame.adapter.AllPlacesAdapter
+import com.example.adoptame.adapter.Adapter_TodosLuagres
 import com.example.adoptame.model.Place
-import com.example.adoptame.viewmodel.PlaceViewModel
+import com.example.adoptame.viewmodel.LugaresViewModel
 import kotlinx.android.synthetic.main.activity_todos_lugares.*
 
 
-class AllPlacesActivity : AppCompatActivity() {
+class Activity_todos_lugares : AppCompatActivity() {
 
     lateinit var placeList: ArrayList<Place>
 
-    private lateinit var mPlaceViewModel: PlaceViewModel
+    private lateinit var mLugaresViewModel: LugaresViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,13 +55,13 @@ class AllPlacesActivity : AppCompatActivity() {
     // Read All Place
     fun allPlaceRecycler() {
         // RecylerView
-        val adapter = AllPlacesAdapter()
+        val adapter = Adapter_TodosLuagres()
         all_places_recycler.adapter = adapter
         all_places_recycler.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
-        // PlaceViewModel to read all places
-        mPlaceViewModel = ViewModelProvider(this).get(PlaceViewModel::class.java)
-        mPlaceViewModel.readAllDataPlace.observe(this, Observer {place ->
+        // LugaresViewModel to read all places
+        mLugaresViewModel = ViewModelProvider(this).get(LugaresViewModel::class.java)
+        mLugaresViewModel.readAllDataPlace.observe(this, Observer { place ->
             adapter.setData(place)
         })
     }
@@ -69,13 +69,13 @@ class AllPlacesActivity : AppCompatActivity() {
     // Search Place
     fun searchPlaceToVisit(searchData: String) {
         // RecylerView
-        val adapter = AllPlacesAdapter()
+        val adapter = Adapter_TodosLuagres()
         all_places_recycler.adapter = adapter
         all_places_recycler.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
-        // PlaceViewModel to read all places
-        mPlaceViewModel = ViewModelProvider(this).get(PlaceViewModel::class.java)
-        mPlaceViewModel.searchPlace(searchData).observe(this, Observer {place ->
+        // LugaresViewModel to read all places
+        mLugaresViewModel = ViewModelProvider(this).get(LugaresViewModel::class.java)
+        mLugaresViewModel.searchPlace(searchData).observe(this, Observer { place ->
             if(place.isEmpty()) {
                 empty_view.setVisibility(View.VISIBLE)
                 empty_view_txt.setVisibility(View.VISIBLE)
@@ -89,13 +89,13 @@ class AllPlacesActivity : AppCompatActivity() {
     // Read all place based on Category Id
     fun readAllPlaceByCateogry(category_id: Int) {
         // RecylerView
-        val adapter = AllPlacesAdapter()
+        val adapter = Adapter_TodosLuagres()
         all_places_recycler.adapter = adapter
         all_places_recycler.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
-        // PlaceViewModel for read places by category id
-        mPlaceViewModel = ViewModelProvider(this).get(PlaceViewModel::class.java)
-        mPlaceViewModel.readAllPlaceByCategory(category_id).observe(this, Observer { place ->
+        // LugaresViewModel for read places by category id
+        mLugaresViewModel = ViewModelProvider(this).get(LugaresViewModel::class.java)
+        mLugaresViewModel.readAllPlaceByCategory(category_id).observe(this, Observer { place ->
             adapter.setData(place)
         })
     }

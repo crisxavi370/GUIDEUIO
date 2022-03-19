@@ -8,7 +8,7 @@ import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_lugar_detalle.*
 
 
-class PlaceDetailActivity : AppCompatActivity() {
+class Activity_lugar_detalle : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lugar_detalle)

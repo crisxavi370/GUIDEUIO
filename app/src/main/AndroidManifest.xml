@@ -13,14 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ProfileActivity"
+        <activity android:name=".Activity_perfil"
             android:exported="false"/>
-        <activity android:name=".script.ScriptDataActivity"
+        <activity android:name=".script.IngresarData"
             android:exported="false"/>
-        <activity android:name=".PlaceDetailActivity"
+        <activity android:name=".Activity_lugar_detalle"
             android:exported="false"/>
         <activity
-            android:name=".AllPlacesActivity"
+            android:name=".Activity_todos_lugares"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".LoginSignup.SignUpActivity"
@@ -32,17 +32,17 @@
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".AllCateogriesActivity"
+            android:name=".Activity_todas_categorias"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".UserDashboardActivity"
+        <activity android:name=".Activity_Dashboard"
             android:exported="false"/>
         <activity
-            android:name=".OnBoardingActivity"
+            android:name=".Activity_onboarding"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".Activity_ventana_splash"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>

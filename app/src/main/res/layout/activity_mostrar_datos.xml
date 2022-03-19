@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo_principal"
 
-    tools:context=".script.ScriptDataActivity">
+    tools:context=".script.IngresarData">
 
     <LinearLayout
         android:orientation="vertical"

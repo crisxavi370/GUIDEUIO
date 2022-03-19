@@ -9,7 +9,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.adoptame.R
-import com.example.adoptame.UserDashboardActivity
+import com.example.adoptame.Activity_Dashboard
 import kotlinx.android.synthetic.main.activity_start_up_screen.*
 import kotlinx.android.synthetic.main.activity_start_up_screen.signup_btn
 
@@ -29,7 +29,7 @@ class StartUpScreenActivity : AppCompatActivity() {
 
         login_out_btn.setOnClickListener {
             logout()
-            var intent = Intent(this, UserDashboardActivity::class.java)
+            var intent = Intent(this, Activity_Dashboard::class.java)
             startActivity(intent)
         }
 

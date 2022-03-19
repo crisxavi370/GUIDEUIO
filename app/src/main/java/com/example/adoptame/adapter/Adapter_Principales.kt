@@ -8,12 +8,12 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.adoptame.PlaceDetailActivity
+import com.example.adoptame.Activity_lugar_detalle
 import com.example.adoptame.R
 import com.example.adoptame.model.Place
 import kotlinx.android.synthetic.main.lugar_principal_design_design.view.*
 
-class FeatureAdapter: RecyclerView.Adapter<FeatureAdapter.MyViewHolder>() {
+class Adapter_Principales: RecyclerView.Adapter<Adapter_Principales.MyViewHolder>() {
 
     lateinit var context: Context
 
@@ -37,7 +37,7 @@ class FeatureAdapter: RecyclerView.Adapter<FeatureAdapter.MyViewHolder>() {
         Glide.with(holder.itemView.context).load(urlImage).into(holder.itemView.featured_image)
 
         holder.itemView.feature_card_id.setOnClickListener {
-            var intent = Intent(holder.itemView.context, PlaceDetailActivity::class.java)
+            var intent = Intent(holder.itemView.context, Activity_lugar_detalle::class.java)
             intent.putExtra("PLACE_NAME", currentItem.place_name.toString())
             intent.putExtra("PLACE_DESC", currentItem.place_desc.toString())
             intent.putExtra("PLACE_PHONE", currentItem.phone.toString())

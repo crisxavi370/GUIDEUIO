@@ -2,43 +2,41 @@ package com.example.adoptame.LoginSignup
 
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.text.TextUtils
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.adoptame.R
-import com.example.adoptame.UserDashboardActivity
-import com.example.adoptame.viewmodel.CategoriesViewModel
-import com.example.adoptame.viewmodel.PlaceViewModel
-import com.example.adoptame.viewmodel.UserViewModel
+import com.example.adoptame.Activity_Dashboard
+import com.example.adoptame.viewmodel.CategoriasViewModel
+import com.example.adoptame.viewmodel.LugaresViewModel
+import com.example.adoptame.viewmodel.UsuarioViewModel
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var mUserViewModel: UserViewModel
+    private lateinit var mUsuarioViewModel: UsuarioViewModel
 
-    private lateinit var mCategoriesViewModel: CategoriesViewModel
+    private lateinit var mCategoriasViewModel: CategoriasViewModel
 
-    private lateinit var mPlaceViewModel: PlaceViewModel
+    private lateinit var mLugaresViewModel: LugaresViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        mUserViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
-        mCategoriesViewModel = ViewModelProvider(this).get(CategoriesViewModel::class.java)
-        mPlaceViewModel = ViewModelProvider(this).get(PlaceViewModel::class.java)
+        mUsuarioViewModel = ViewModelProvider(this).get(UsuarioViewModel::class.java)
+        mCategoriasViewModel = ViewModelProvider(this).get(CategoriasViewModel::class.java)
+        mLugaresViewModel = ViewModelProvider(this).get(LugaresViewModel::class.java)
 
         btn_login.setOnClickListener {
             val email = et_login_email.editText?.text.toString().trim()
             val password = et_login_password.editText?.text.toString().trim()
 
             if(inputCheck(email, password)){
-                var userpassword = mUserViewModel.findUserByEmailPassword(email, password)
+                var userpassword = mUsuarioViewModel.findUserByEmailPassword(email, password)
                 userpassword.observe(this, Observer { emailandpassword ->
                    if(emailandpassword.isEmpty()){
                        Toast.makeText(this, "Usuario o Contraseña Incorrecta", Toast.LENGTH_SHORT).show()
@@ -98,7 +96,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun userDashboard() {
-        var intent = Intent(this, UserDashboardActivity::class.java)
+        var intent = Intent(this, Activity_Dashboard::class.java)
         startActivity(intent)
     }
 }

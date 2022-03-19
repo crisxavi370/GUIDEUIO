@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_todas_categorias.*
 
-class AllCateogriesActivity : AppCompatActivity() {
+class Activity_todas_categorias : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_todas_categorias)
 
         //Back to user dashborad
         back_pressed.setOnClickListener {
-            var i = Intent(applicationContext, UserDashboardActivity::class.java)
+            var i = Intent(applicationContext, Activity_Dashboard::class.java)
             startActivity(i)
         }
 
@@ -40,7 +40,7 @@ class AllCateogriesActivity : AppCompatActivity() {
     }
 
     fun intentActionGo(categoryId: Int) {
-        var intent = Intent(applicationContext, AllPlacesActivity::class.java)
+        var intent = Intent(applicationContext, Activity_todos_lugares::class.java)
         intent.putExtra("CALL_FROM_CATEGORY", "call_from_category")
         intent.putExtra("CATEOGRY_ID", categoryId)
         startActivity(intent)

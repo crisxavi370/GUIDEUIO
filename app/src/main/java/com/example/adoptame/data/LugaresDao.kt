@@ -6,7 +6,7 @@ import com.example.adoptame.model.Place
 
 
 @Dao
-interface PlaceDao {
+interface LugaresDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun addPlace(place: Place)

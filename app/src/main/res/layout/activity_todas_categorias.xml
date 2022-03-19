@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".AllCateogriesActivity"
+    tools:context=".Activity_todas_categorias"
     android:background="@drawable/fondo_principal">
 
     <LinearLayout
@@ -24,14 +24,6 @@
                 android:layout_centerVertical="true"
                 android:padding="15dp"
                 android:src="@drawable/regresar_icono_black" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:padding="15dp"
-                android:src="@drawable/busqueda_icono" />
 
         </RelativeLayout>
 

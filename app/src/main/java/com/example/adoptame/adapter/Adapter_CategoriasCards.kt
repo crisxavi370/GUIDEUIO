@@ -6,16 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.adoptame.AllPlacesActivity
+import com.example.adoptame.Activity_todos_lugares
 import com.example.adoptame.R
-import com.example.adoptame.model.Categories
+import com.example.adoptame.model.Categorias
 import kotlinx.android.synthetic.main.categorias_icono_design.view.*
 
-class CategoriesCardIconAdapter: RecyclerView.Adapter<CategoriesCardIconAdapter.MyViewHolder>() {
+class Adapter_CategoriasCards: RecyclerView.Adapter<Adapter_CategoriasCards.MyViewHolder>() {
 
     lateinit var context: Context
 
-    private var categoryList = emptyList<Categories>()
+    private var categoryList = emptyList<Categorias>()
 
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
@@ -48,7 +48,7 @@ class CategoriesCardIconAdapter: RecyclerView.Adapter<CategoriesCardIconAdapter.
 
         holder.itemView.card_cateory_icon.setOnClickListener {
             val categoryId = currentItem.id
-            var intent = Intent(holder.itemView.context, AllPlacesActivity::class.java)
+            var intent = Intent(holder.itemView.context, Activity_todos_lugares::class.java)
             intent.putExtra("CALL_FROM_CATEGORY", "call_from_category")
             intent.putExtra("CATEOGRY_ID", categoryId)
             holder.itemView.context.startActivity(intent)
@@ -59,7 +59,7 @@ class CategoriesCardIconAdapter: RecyclerView.Adapter<CategoriesCardIconAdapter.
         return categoryList.size
     }
 
-    fun setData(category: List<Categories>){
+    fun setData(category: List<Categorias>){
         this.categoryList = category
         notifyDataSetChanged()
     }

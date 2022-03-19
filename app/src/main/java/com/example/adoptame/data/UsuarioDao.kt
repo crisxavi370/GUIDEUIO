@@ -2,26 +2,26 @@ package com.example.adoptame.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.adoptame.model.User
+import com.example.adoptame.model.Usuario
 
 
 @Dao
-interface  UserDao {
+interface  UsuarioDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addUser(user: User)
+    suspend fun addUser(usuario: Usuario)
 
     @Query("SELECT * FROM user_table ORDER BY id ASC")
-    fun readAllData(): LiveData<List<User>>
+    fun readAllData(): LiveData<List<Usuario>>
 
     @Query("SELECT * FROM user_table WHERE email=:email AND password=:password")
-    fun findUserByEmailPassword(email: String, password: String) : LiveData<List<User>>
+    fun findUserByEmailPassword(email: String, password: String) : LiveData<List<Usuario>>
 
    @Update
-    suspend fun updateUser(user: User)
+    suspend fun updateUser(usuario: Usuario)
 
     @Delete
-    suspend fun deleteUser(user: User)
+    suspend fun deleteUser(usuario: Usuario)
 
     @Query("DELETE FROM user_table")
     suspend fun deleteAllUsers()

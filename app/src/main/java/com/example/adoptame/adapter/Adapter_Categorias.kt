@@ -1,6 +1,6 @@
 package com.example.adoptame.adapter
 
-class CategoriesHelperClass(image:Int, title:String) {
+class Adapter_Categorias(image:Int, title:String) {
     var image:Int = 0
         internal set
     var title:String

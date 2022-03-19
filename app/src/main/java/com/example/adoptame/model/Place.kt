@@ -10,7 +10,7 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 @Entity(tableName = "place_table",
     foreignKeys = [ForeignKey(
-        entity = Categories::class,
+        entity = Categorias::class,
         parentColumns = ["id"],
         childColumns = ["category_id"],
         onDelete = CASCADE)]
