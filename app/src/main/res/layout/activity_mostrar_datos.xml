@@ -39,6 +39,38 @@
             android:layout_marginRight="100dp"
             android:background="#689bd3"
             android:text="Mostrar Contenido"/>
+        <LinearLayout
+
+            android:layout_width="385dp"
+            android:layout_height="500dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/brandon_grotesque_black"
+                android:lineHeight="30dp"
+                android:text="Acerca de la Aplicación"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="La aplicación fue desarrollada como parte del proyecto final de la materia de Dispositivos Móviles en el año 2021-2022.
+\nEl objetivo principal de la aplicación es Diseñar Un Aplicativo móvil que permita fomentar el turismo en la ciudad de Quito, mostrando al usuario información de la ciudad centrándose en lugares turísticos, monumentos, restaurantes tradicionales que ofrezcan comida típica de la ciudad y hoteles.
+\n@GUIDEUIO 2022" />
+        </LinearLayout>
 
 
 
