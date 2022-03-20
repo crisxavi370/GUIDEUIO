@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -21,6 +22,7 @@ import com.example.adoptame.LoginSignup.StartUpScreenActivity
 import com.example.adoptame.adapter.Adapter_CategoriasCards
 import com.example.adoptame.adapter.Adapter_Principales
 import com.example.adoptame.script.IngresarData
+
 import com.example.adoptame.viewmodel.CategoriasViewModel
 import com.example.adoptame.viewmodel.LugaresViewModel
 import com.google.android.material.navigation.NavigationView
@@ -35,6 +37,7 @@ class Activity_Dashboard : AppCompatActivity(), NavigationView.OnNavigationItemS
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
+
 
         var navigationView= this.findViewById<NavigationView>(R.id.navigation_view)
         var drawerLayout = this.findViewById<DrawerLayout>(R.id.drawer_layout)
