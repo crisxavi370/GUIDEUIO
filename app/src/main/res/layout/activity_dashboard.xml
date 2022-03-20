@@ -163,6 +163,39 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/featured_background"
+                    android:layout_width="385dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/banner_background_light"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/brandon_grotesque_black"
+                        android:lineHeight="24sp"
+                        android:text="@string/ubicaciones_destacadas"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/ubicaciones_destacadas_descripcion" />
+                </LinearLayout>
+
                 <!-- All featured location -->
                 <RelativeLayout
 
@@ -172,44 +205,12 @@
                     android:layout_marginTop="20dp"
                     android:background="#c4e4ec ">
 
-                    <LinearLayout
-                        android:id="@+id/featured_background"
-                        android:layout_width="142dp"
-                        android:layout_height="275dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@color/banner_background_light"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="50dp"
-                            android:fontFamily="@font/brandon_grotesque_black"
-                            android:lineHeight="24sp"
-                            android:text="@string/ubicaciones_destacadas"
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorAccent"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:text="@string/ubicaciones_destacadas_descripcion" />
-                    </LinearLayout>
-
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/featured_recycler"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/featured_background"
-                        android:background="#c4e4ec  " />
+                        android:background="#c4e4ec"
+                        android:orientation="vertical" />
 
                 </RelativeLayout>
 
