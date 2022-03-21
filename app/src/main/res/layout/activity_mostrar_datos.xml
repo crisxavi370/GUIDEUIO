@@ -69,7 +69,8 @@
                 android:layout_margin="15dp"
                 android:text="La aplicación fue desarrollada como parte del proyecto final de la materia de Dispositivos Móviles en el año 2021-2022.
 \nEl objetivo principal de la aplicación es Diseñar Un Aplicativo móvil que permita fomentar el turismo en la ciudad de Quito, mostrando al usuario información de la ciudad centrándose en lugares turísticos, monumentos, restaurantes tradicionales que ofrezcan comida típica de la ciudad y hoteles.
-\n@GUIDEUIO 2022" />
+\n@GUIDEUIO 2022\n Ultimo Commit"
+                />
         </LinearLayout>
 
 
